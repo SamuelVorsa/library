@@ -1,0 +1,71 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: DFF
+* View Name:     schematic
+* Netlisted on:  Nov 28 11:22:30 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NAND a b out
+*.PININFO a:B b:B out:B
+MTN1 out a net13 gnd! nfet m=1 l=180n w=1.44u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 net13 b gnd! gnd! nfet m=1 l=180n w=1.44u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out a vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Week4Lab1stInverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Week4Lab1stInverter in out
+*.PININFO in:I out:I
+MTN0 out in gnd! gnd! nfet m=1 l=180n w=600n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out in vdd! vdd! pfet m=1 l=180n w=1.8u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    DFF
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFF CLK Data Q QNOT
+*.PININFO CLK:B Data:B Q:B QNOT:B
+XI8 net16 Data net12 / Lab4NAND
+XI7 CLK net12 net22 / Lab4NAND
+XI5 Q net16 QNOT / Lab4NAND
+XI4 net15 QNOT Q / Lab4NAND
+XI3 net15 net23 net16 / Lab4NAND
+XI1 net13 CLK net15 / Lab4NAND
+XI0 net12 net15 net13 / Lab4NAND
+XI6 net22 net23 / Week4Lab1stInverter
+.ENDS
+

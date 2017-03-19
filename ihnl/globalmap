@@ -1,0 +1,16 @@
+CADENCE IHNL01070
+$model
+cmrf7sf_digital_layout/AND2_F/schematic AND2_F
+cmrf7sf_digital_layout/ADDF_F/schematic ADDF_F
+ECEC471_Lib/1bitALU6function/schematic 1bitALU6function
+cmrf7sf_digital_layout/INVERT_F/schematic INVERT_F
+cmrf7sf_digital_layout/OR2_F/schematic OR2_F
+cmrf7sf_digital_layout/MUX41_J/schematic MUX41_J
+cmrf7sf_digital_layout/MUX21_F/schematic MUX21_F
+$endmodel
+$net
+gnd! gnd!
+vdd! vdd!
+$endnet
+$param
+$endparam

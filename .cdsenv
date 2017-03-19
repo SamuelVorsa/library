@@ -1,0 +1,35 @@
+license	VLSL_UseNextLicense	string	"always"
+license	ADEL_UseNextLicense	string	"always"
+license	VSELicenseCheckoutOrder	string	"XL,L"
+ddserv  showWhatsNew    string  "6.1.6"
+
+layout  instLibName     string  "cmrf7sf"
+layout  ySnapSpacing    float   0.01
+layout  xSnapSpacing    float   0.01
+;;### Added by Kyle Juretus for layout grid/pref settings###
+layout  gravityOn       boolean nil
+layout  startLevel	int 	0
+layout	stopLevel	int	32
+layout  showWhatsNew    string  "no"
+layout  gridSpacing     float   0.3
+layout  gridMultiple    int     5
+
+layoutXL           sfactorNames    string  "sc SC"
+
+spectre.envOpts    modelFiles      string  "design.scs wafer.scs allModels.scs;tt"
+spectre.envOpts    includePath     string  "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/Spectre/models"
+spectre.opts       tnom            string  "25"
+
+; spectreS.envOpts   includeFile     string  "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/SpectreS/models/cdsSpice_syntax.include"
+; spectreS.envOpts   updateFile      string  "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/SpectreS/models/update"
+; spectreS.envOpts   initFile        string  "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/SpectreS/models/init"
+; spectreS.envOpts   includeSyntax   string  "cdsSpice"
+; spectreS.opts      tnom            string  "25"
+
+; hspiceS.envOpts    includeFile     string  "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/HSPICE/models/hspice_example.include"
+; hspiceS.envOpts    includeSyntax   string  "hspice"
+; hspiceS.opts       TNOM            string  "25"
+
+; iccTranslator.ExportEditor rulesFile string "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/cdslib/cmrf7sf/cmrf7sfAM6.vcr"
+
+;;##added by Ying for Calibre LVS schematic netlist extraction##

@@ -1,0 +1,1151 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         1bitALU6function.lvs.report
+LAYOUT NAME:              /home/DREXEL/snv27/IBM_CMOS7RF/1bitALU6function.sp ('1bitALU6function')
+SOURCE NAME:              /home/DREXEL/snv27/IBM_CMOS7RF/1bitALU6function.src.net ('1bitALU6function')
+RULE FILE:                /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+CREATION TIME:            Sun Mar 19 12:19:03 2017
+CURRENT DIRECTORY:        /home/DREXEL/snv27/IBM_CMOS7RF
+USER NAME:                snv27
+CALIBRE VERSION:          v2015.3_25.16    Tue Sep 1 14:37:32 PDT 2015
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      1bitALU6function              1bitALU6function
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD" "Vdd" "vdd" "VDD:P" "DVDD" "DVDD:P" "VDD!" "?VDD?" "vdd?" "inh_vdd" "INH_VDD" "VCC"
+                                          "Vcc" "vcc" "?VCC?"
+   LVS GROUND NAME                        "VSS" "Vss" "vss" "VSS:G" "DVSS" "DVSS:P" "?VSS?" "vss?" "GND" "GND:G" "GND!" "?GND?"
+                                          "sub!" "sub?" "inh_gnd" "INH_GND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            NO
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               RD RE YB
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES [ TOLERANCE L 5 rf 0 psp 0 nf 0 mSwitch 0 m 0 ]
+   LVS REDUCE PARALLEL BIPOLAR            NO
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  R(opndres)  SERIES POS NEG [ TOLERANCE w 0 l 0 pbar 0 ]
+   LVS REDUCE  R(oppdres)  SERIES POS NEG [ TOLERANCE w 0 l 0 pbar 0 ]
+   LVS REDUCE  R(opppcres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(oprrpres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(oprppres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(k1res)  SERIES POS NEG [ TOLERANCE w 0 ]
+   LVS REDUCE  R(sblkndres)  SERIES POS NEG [ TOLERANCE w 0 pbar 0 ]
+   LVS REDUCE  R(sblkpdres)  SERIES POS NEG [ TOLERANCE w 0 pbar 0 ]
+   LVS REDUCE  R(rr_serpentine)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 m 0 ]
+   LVS REDUCE  R(lvsres)  SERIES POS NEG
+   LVS REDUCE  R(lvsres)  PARALLEL
+   LVS REDUCE  PCDCAP  PARALLEL
+   LVS REDUCE  PCDCAP33  PARALLEL
+   LVS REDUCE  D(dipdnw)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(sbd)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(sbdnw)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  psbd  PARALLEL [ TOLERANCE w 0 l 0 nf 0 mSwitch 0 ]
+   LVS REDUCE  Q(divpnp)  PARALLEL NO
+   LVS REDUCE  dindpw  PARALLEL [ TOLERANCE l 0 w 0 nf 0 ]
+   LVS REDUCE  esdnsh_base  PARALLEL NO
+   LVS REDUCE  esdpsh_base  PARALLEL NO
+   LVS REDUCE  esdvpnpnw  PARALLEL
+   LVS REDUCE  esdndsx  PARALLEL
+   LVS REDUCE  D(esdpnpi)  PARALLEL
+   LVS REDUCE  D(esdndpi)  PARALLEL
+   LVS REDUCE  D(tdpdnw)  PARALLEL
+   LVS REDUCE  tdndsx  PARALLEL
+   LVS REDUCE  c(mim)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(mimhd)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(mimhk)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 setind 5 ]
+   LVS REDUCE  c(dualmim)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(dualmimhd)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  R(oppdres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(opndres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(opppcres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(oprrpres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(oprppres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(k1res)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(sblkndres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(sblkpdres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(rr_serpentine)  PARALLEL [ TOLERANCE w 0 l 0 n 0 bp 0 ]
+   LVS REDUCE  jfetjc  PARALLEL [ TOLERANCE w 0 l 0 nf 0 m 0 par 0 mSwitch 0 ]
+   LVS REDUCE  vlnpn  PARALLEL [ TOLERANCE exw 0 exl 0 nstripes 0 m 0 par 0 mSwitch 0 ]
+   LVS REDUCE  mosvar  PARALLEL
+   LVS REDUCE  mosvar50  PARALLEL
+   LVS REDUCE  p5pcdcap50  PARALLEL
+   LVS REDUCE  pcap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(havar)  PARALLEL
+   LVS REDUCE  diffhavar  PARALLEL
+   LVS REDUCE  R(SUBC)  PARALLEL
+   LVS REDUCE  efuse  PARALLEL
+   LVS REDUCE  C(vncap)  PARALLEL NO
+   LVS REDUCE  nfettw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  nfet33tw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  nfet50tw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfethv)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvtnfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvt2nfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvtnfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfethv)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(p5pfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  C(CP)  OPEN
+   LVS FILTER  D(DP)  OPEN
+   LVS FILTER  L(LP)  SHORT
+   LVS FILTER  R(RP)  SHORT
+   LVS FILTER  D(diodenwx)  OPEN
+   LVS FILTER  D(diodenx)  OPEN
+   LVS FILTER  D(diodepnw)  OPEN
+   LVS FILTER  D(diodepisx)  OPEN
+   LVS FILTER  D(diodepwpi)  OPEN
+   LVS FILTER  D(diodepisx)  OPEN
+   LVS FILTER  D(diodepwpi)  OPEN
+
+   // Trace Property
+
+   TRACE PROPERTY  r(opppcres)  w w 1
+   TRACE PROPERTY  r(oprrpres)  w w 1
+   TRACE PROPERTY  r(oprppres)  w w 1
+   TRACE PROPERTY  r(opndres)  w w 1
+   TRACE PROPERTY  r(oppdres)  w w 1
+   TRACE PROPERTY  r(k1res)  w w 1
+   TRACE PROPERTY  r(sblkndres)  w w 1
+   TRACE PROPERTY  r(sblkpdres)  w w 1
+   TRACE PROPERTY  r(opppcres)  l l 1
+   TRACE PROPERTY  r(oprrpres)  l l 1
+   TRACE PROPERTY  r(oprppres)  l l 1
+   TRACE PROPERTY  r(opndres)  l l 1
+   TRACE PROPERTY  r(oppdres)  l l 1
+   TRACE PROPERTY  r(k1res)  l l 1
+   TRACE PROPERTY  r(sblkndres)  l l 1
+   TRACE PROPERTY  r(sblkpdres)  l l 1
+   TRACE PROPERTY  r(opppcres)  bp bp 0
+   TRACE PROPERTY  r(oprrpres)  bp bp 0
+   TRACE PROPERTY  r(oprppres)  bp bp 0
+   TRACE PROPERTY  r(opppcres)  s s 1
+   TRACE PROPERTY  r(oprrpres)  s s 1
+   TRACE PROPERTY  r(oprppres)  s s 1
+   TRACE PROPERTY  r(opndres)  s s 1
+   TRACE PROPERTY  r(oppdres)  s s 1
+   TRACE PROPERTY  r(k1res)  s s 1
+   TRACE PROPERTY  r(sblkndres)  s s 1
+   TRACE PROPERTY  r(sblkpdres)  s s 1
+   TRACE PROPERTY  r(opppcres)  pbar pbar 1
+   TRACE PROPERTY  r(oprrpres)  pbar pbar 1
+   TRACE PROPERTY  r(oprppres)  pbar pbar 1
+   TRACE PROPERTY  r(opndres)  pbar pbar 1
+   TRACE PROPERTY  r(oppdres)  pbar pbar 1
+   TRACE PROPERTY  r(sblkndres)  pbar pbar 1
+   TRACE PROPERTY  r(sblkpdres)  pbar pbar 1
+   TRACE PROPERTY  jfetjc  w w 1
+   TRACE PROPERTY  jfetjc  l l 1
+   TRACE PROPERTY  jfetjc  nf nf 0
+   TRACE PROPERTY  jfetjc  m m 0
+   TRACE PROPERTY  jfetjc  par par 0
+   TRACE PROPERTY  jfetjc  mswitch mswitch 0
+   TRACE PROPERTY  vlnpn  exw exw 1
+   TRACE PROPERTY  vlnpn  exl exl 1
+   TRACE PROPERTY  vlnpn  nstripes nstripes 0
+   TRACE PROPERTY  vlnpn  m m 0
+   TRACE PROPERTY  vlnpn  par par 0
+   TRACE PROPERTY  vlnpn  mswitch mswitch 0
+   TRACE PROPERTY  r(rr_serpentine)  w w 1
+   TRACE PROPERTY  r(rr_serpentine)  l l 1
+   TRACE PROPERTY  r(rr_serpentine)  n n 0
+   TRACE PROPERTY  r(rr_serpentine)  bp bp 0
+   TRACE PROPERTY  r(rr_serpentine)  m m 0
+   TRACE PROPERTY  d(sbd)  l l 1
+   TRACE PROPERTY  d(sbd)  w w 1
+   TRACE PROPERTY  d(sbd)  nf nf 0
+   TRACE PROPERTY  d(sbd)  m m 0
+   TRACE PROPERTY  d(sbdnw)  l l 1
+   TRACE PROPERTY  d(sbdnw)  w w 1
+   TRACE PROPERTY  d(sbdnw)  nf nf 0
+   TRACE PROPERTY  d(sbdnw)  m m 0
+   TRACE PROPERTY  psbd  w w 1
+   TRACE PROPERTY  psbd  l l 1
+   TRACE PROPERTY  psbd  nf nf 0
+   TRACE PROPERTY  psbd  m m 0
+   TRACE PROPERTY  psbd  par par 0
+   TRACE PROPERTY  psbd  mswitch mswitch 0
+   TRACE PROPERTY  d(havar)  rxl rxl 1
+   TRACE PROPERTY  d(havar)  rxw rxw 1
+   TRACE PROPERTY  d(havar)  nastripes nastripes 0
+   TRACE PROPERTY  diffhavar  w w 1
+   TRACE PROPERTY  diffhavar  l l 1
+   TRACE PROPERTY  diffhavar  nf nf 0
+   TRACE PROPERTY  d(dipdnw)  w w 1
+   TRACE PROPERTY  d(dipdnw)  l l 1
+   TRACE PROPERTY  d(dipdnw)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  w w 1
+   TRACE PROPERTY  q(divpnp)  l l 1
+   TRACE PROPERTY  q(divpnp)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  m m 0
+   TRACE PROPERTY  dindpw  w w 1
+   TRACE PROPERTY  dindpw  l l 1
+   TRACE PROPERTY  dindpw  nf nf 0
+   TRACE PROPERTY  dindpw  m m 0
+   TRACE PROPERTY  esdnsh_base  wesd wesd 1
+   TRACE PROPERTY  esdnsh_base  lesd lesd 1
+   TRACE PROPERTY  esdnsh_base  nf nf 0
+   TRACE PROPERTY  esdnsh_base  ldop ldop 1
+   TRACE PROPERTY  esdnsh_base  lsop lsop 1
+   TRACE PROPERTY  esdnsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdpsh_base  wesd wesd 1
+   TRACE PROPERTY  esdpsh_base  lesd lesd 1
+   TRACE PROPERTY  esdpsh_base  nf nf 0
+   TRACE PROPERTY  esdpsh_base  ldop ldop 1
+   TRACE PROPERTY  esdpsh_base  lsop lsop 1
+   TRACE PROPERTY  esdpsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdvpnpnw  area area 1
+   TRACE PROPERTY  esdvpnpnw  perim perim 1
+   TRACE PROPERTY  esdvpnpnw  nanod nanod 0
+   TRACE PROPERTY  esdndsx  area area 1
+   TRACE PROPERTY  esdndsx  perim perim 1
+   TRACE PROPERTY  esdndsx  ncath ncath 0
+   TRACE PROPERTY  d(esdpnpi)  a a 1
+   TRACE PROPERTY  d(esdpnpi)  perim perim 1
+   TRACE PROPERTY  d(esdpnpi)  nanod nanod 0
+   TRACE PROPERTY  d(esdndpi)  a a 1
+   TRACE PROPERTY  d(esdndpi)  perim perim 1
+   TRACE PROPERTY  d(esdndpi)  ncath ncath 0
+   TRACE PROPERTY  ind  n n 0
+   TRACE PROPERTY  ind  x x 9
+   TRACE PROPERTY  ind  w w 1
+   TRACE PROPERTY  ind  s s 1
+   TRACE PROPERTY  ind  nlev nlev 0
+   TRACE PROPERTY  ind  grnd grnd 0
+   TRACE PROPERTY  ind  wu wu 1
+   TRACE PROPERTY  symind  n n 0
+   TRACE PROPERTY  symind  x x 9
+   TRACE PROPERTY  symind  w w 1
+   TRACE PROPERTY  symind  s s 1
+   TRACE PROPERTY  symind  nlev nlev 0
+   TRACE PROPERTY  symind  grnd grnd 0
+   TRACE PROPERTY  symind  wu wu 1
+   TRACE PROPERTY  symind  xov xov 0
+   TRACE PROPERTY  indline  l l 1
+   TRACE PROPERTY  indline  w w 9
+   TRACE PROPERTY  indline  ind ind 1
+   TRACE PROPERTY  indline  grnd grnd 0
+   TRACE PROPERTY  singlewire  w w 0
+   TRACE PROPERTY  singlewire  l l 0
+   TRACE PROPERTY  singlewire  layerads layerads 0
+   TRACE PROPERTY  singlewire  nlev nlev 0
+   TRACE PROPERTY  singlewire  s s 1
+   TRACE PROPERTY  singlewire  overads overads 0
+   TRACE PROPERTY  singlewire  shieldsads shieldsads 0
+   TRACE PROPERTY  coupledwires  l l 0
+   TRACE PROPERTY  coupledwires  w w 0
+   TRACE PROPERTY  coupledwires  d d 1
+   TRACE PROPERTY  coupledwires  s s 1
+   TRACE PROPERTY  coupledwires  layerads layerads 0
+   TRACE PROPERTY  coupledwires  nlev nlev 0
+   TRACE PROPERTY  coupledwires  overads overads 0
+   TRACE PROPERTY  coupledwires  shieldsads shieldsads 0
+   TRACE PROPERTY  c(dualmim)  w w 1
+   TRACE PROPERTY  c(dualmim)  l l 1
+   TRACE PROPERTY  c(dualmim)  m m 0
+   TRACE PROPERTY  c(dualmim)  nlev nlev 0
+   TRACE PROPERTY  c(dualmim)  lm lm 0
+   TRACE PROPERTY  c(dualmim)  hd hd 0
+   TRACE PROPERTY  c(dualmim)  bp bp 0
+   TRACE PROPERTY  c(dualmimhd)  w w 1
+   TRACE PROPERTY  c(dualmimhd)  l l 1
+   TRACE PROPERTY  c(dualmimhd)  m m 0
+   TRACE PROPERTY  c(dualmimhd)  nlev nlev 0
+   TRACE PROPERTY  c(dualmimhd)  lm lm 0
+   TRACE PROPERTY  c(dualmimhd)  hd hd 0
+   TRACE PROPERTY  c(dualmimhd)  bp bp 0
+   TRACE PROPERTY  c(mim)  w w 1
+   TRACE PROPERTY  c(mim)  l l 1
+   TRACE PROPERTY  c(mim)  m m 0
+   TRACE PROPERTY  c(mim)  nlev nlev 0
+   TRACE PROPERTY  c(mim)  lm lm 0
+   TRACE PROPERTY  c(mim)  hd hd 0
+   TRACE PROPERTY  c(mim)  bp bp 0
+   TRACE PROPERTY  c(mimhd)  w w 1
+   TRACE PROPERTY  c(mimhd)  l l 1
+   TRACE PROPERTY  c(mimhd)  m m 0
+   TRACE PROPERTY  c(mimhd)  nlev nlev 0
+   TRACE PROPERTY  c(mimhd)  lm lm 0
+   TRACE PROPERTY  c(mimhd)  hd hd 0
+   TRACE PROPERTY  c(mimhd)  bp bp 0
+   TRACE PROPERTY  c(mimhk)  w w 1
+   TRACE PROPERTY  c(mimhk)  l l 1
+   TRACE PROPERTY  c(mimhk)  m m 0
+   TRACE PROPERTY  c(mimhk)  nlev nlev 0
+   TRACE PROPERTY  c(mimhk)  lm lm 0
+   TRACE PROPERTY  c(mimhk)  bp bp 0
+   TRACE PROPERTY  c(vncap)  w w 1
+   TRACE PROPERTY  c(vncap)  l l 1
+   TRACE PROPERTY  c(vncap)  botlev botlev 0
+   TRACE PROPERTY  c(vncap)  toplev toplev 0
+   TRACE PROPERTY  c(vncap)  lm lm 0
+   TRACE PROPERTY  c(vncap)  bp bp 0
+   TRACE PROPERTY  mosvar  l l 1
+   TRACE PROPERTY  mosvar  w w 1
+   TRACE PROPERTY  mosvar  xrep xrep 0
+   TRACE PROPERTY  mosvar  yrep yrep 0
+   TRACE PROPERTY  p5pcdcap50  l l 1
+   TRACE PROPERTY  p5pcdcap50  w w 1
+   TRACE PROPERTY  p5pcdcap50  xrep xrep 0
+   TRACE PROPERTY  p5pcdcap50  yrep yrep 0
+   TRACE PROPERTY  mosvar50  l l 1
+   TRACE PROPERTY  mosvar50  w w 1
+   TRACE PROPERTY  mosvar50  xrep xrep 0
+   TRACE PROPERTY  mosvar50  yrep yrep 0
+   TRACE PROPERTY  mosvar50  m m 0
+   TRACE PROPERTY  pcap  l l 1
+   TRACE PROPERTY  pcap  w w 1
+   TRACE PROPERTY  pcap  xrep xrep 0
+   TRACE PROPERTY  pcap  yrep yrep 0
+   TRACE PROPERTY  diffmosvar  w w 1
+   TRACE PROPERTY  diffmosvar  l l 1
+   TRACE PROPERTY  diffmosvar  nf nf 0
+   TRACE PROPERTY  pcdcap  l l 1
+   TRACE PROPERTY  pcdcap  w w 1
+   TRACE PROPERTY  pcdcap  m m 0
+   TRACE PROPERTY  pcdcap33  l l 1
+   TRACE PROPERTY  pcdcap33  w w 1
+   TRACE PROPERTY  pcdcap33  m m 0
+   TRACE PROPERTY  bondpad  area area 1
+   TRACE PROPERTY  bondpad  perim perim 1
+   TRACE PROPERTY  bondpad  grnd grnd 0
+   TRACE PROPERTY  bondpad  nlev nlev 0
+   TRACE PROPERTY  bondpad  rect rect 0
+
+   // User Trace Property
+
+   TRACE PROPERTY  mn(nfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfethv)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfethv)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(p5pfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  m(zvtnfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  m(zvtnfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  nfettw  l w gcon m rf nf psp bentgate mswitch
+   TRACE PROPERTY  nfet33tw  l w gcon m rf nf psp bentgate mswitch
+   TRACE PROPERTY  nfet50tw  l w gcon m rf nf psp bentgate mswitch
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         1bitALU6function
+SOURCE CELL NAME:         1bitALU6function
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             12        12
+
+ Nets:              62        52    *
+
+ Instances:         53        53         MN (4 pins)
+                    53        53         MP (4 pins)
+                     6         0    *    R (2 pins)
+                    11         0    *    D (2 pins)
+                ------    ------
+ Total Inst:       123       106
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             12        12
+
+ Nets:              51        32    *
+
+ Instances:          1         0    *    R (2 pins)
+                    18         6    *    _invb (6 pins)
+                     9         9         _invv (4 pins)
+                     0         3    *    _invx2v (4 pins)
+                     1         1         _mx2v (6 pins)
+                     1         1         _nand2v (5 pins)
+                     1         1         _nor2v (5 pins)
+                     4         0    *    _smn2b (5 pins)
+                     4         0    *    _smp2v (4 pins)
+                     2         2         _tgmb (7 pins)
+                     0         2    *    _xori2v (5 pins)
+                ------    ------
+ Total Inst:        41        25
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net 2                                                     net22
+       --- 3 Connections On This Net ---                         --- 4 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (_invb):out                                               ** missing connection **
+         X89/M5(8.270,-7.170):s
+         X89/M11(8.270,-3.830):s
+       
+       
+       ** missing connection **                                  (_xori2v):out
+                                                                   XI4/MTNZ:g
+                                                                   XI4/MTPZ:g
+                                                                   XI4/MTND0:d
+                                                                   XI4/MTND1:s
+                                                                   XI4/MTPD1:d
+                                                                   XI4/MTPD0:d
+       
+       
+       ** missing connection **                                  (_invv):in
+                                                                   XI48/MTNB:g
+                                                                   XI48/MTPB:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net 46                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net 43                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net 44                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net 45                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net 19                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net 17                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net 7                                                     ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net 10                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net 47                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net 27                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net 26                                                    ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net X87/6                                                 ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net X88/6                                                 ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net X89/8                                                 ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    Net X89/14                                                ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    Net X89/9                                                 ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    Net X90/8                                                 ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    Net X90/14                                                ** missing net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    Net X90/9                                                 ** missing net **
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 21    M17(17.830,-13.950)  MN(nfet)                             XI48/MTNX5  MN(nfet)
+         g: 8                                                      g: XI48/XNORAB
+         s: 12                                                     s: XI48/precout
+         d: 3                                                      d: XI48/BNOT
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    M18(18.530,-13.950)  MN(nfet)                             XI48/MTNX6  MN(nfet)
+         g: 9                                                      g: XI48/XORAB
+         s: 12                                                     s: XI48/precout
+         d: 15                                                     d: XI48/CNOT
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    M26(22.270,-14.090)  MN(nfet)                             XI48/MTNX3  MN(nfet)
+         g: 15                                                     g: XI48/CNOT
+         s: 18                                                     s: XI48/predrive
+         d: 8                                                      d: XI48/XNORAB
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    M28(22.970,-14.090)  MN(nfet)                             XI48/MTNX4  MN(nfet)
+         g: Cin                                                    g: Cin
+         s: 18                                                     s: XI48/predrive
+         d: 9                                                      d: XI48/XORAB
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    M37(28.730,1.490)  MN(nfet)                               XI2/MTNX5  MN(nfet)
+         g: OP0                                                    g: OP0
+         s: 22                                                     s: XI2/net93
+         d: 37                                                     d: XI2/net149
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    M38(29.430,1.470)  MN(nfet)                               XI2/MTNX4  MN(nfet)
+         s: 22                                                     s: XI2/net93
+         d: 38                                                     d: XI2/net160
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    M36(27.310,1.490)  MN(nfet)                               XI2/MTNSD1  MN(nfet)
+         g: OP0                                                    g: OP0
+         d: gnd!                                                   d: gnd!
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    M16(16.330,-14.870)  MN(nfet)                             XI48/MTNB  MN(nfet)
+         s: 3                                                      s: XI48/BNOT
+         d: gnd!                                                   d: gnd!
+         g: 7                                                      ** missing net **
+         b: 43                                                     ** missing net **
+         ** 2 **                                                   g: net22
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    M12(14.930,-15.010)  MN(nfet)                             XI48/MTNX1  MN(nfet)
+         g: 4                                                      g: XI48/ANOT
+         s: 9                                                      s: XI48/XORAB
+         d: 31                                                     d: XI48/BBUFF
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    M13(15.630,-15.010)  MN(nfet)                             XI48/MTNX2  MN(nfet)
+         g: 1                                                      g: net23
+         s: 9                                                      s: XI48/XORAB
+         d: 3                                                      d: XI48/BNOT
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    M31(25.150,1.470)  MN(nfet)                               XI2/MTNX1  MN(nfet)
+         g: OP1                                                    g: OP1
+         s: 38                                                     s: XI2/net160
+         d: 35                                                     d: XI2/net154
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    M33(25.850,1.470)  MN(nfet)                               XI2/MTNX0  MN(nfet)
+         g: 11                                                     g: XI2/SD2_bar
+         s: 38                                                     s: XI2/net160
+         d: 36                                                     d: XI2/net157
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    M20(20.370,1.470)  MN(nfet)                               XI2/MTNX2  MN(nfet)
+         g: 11                                                     g: XI2/SD2_bar
+         s: 37                                                     s: XI2/net149
+         d: 32                                                     d: XI2/net151
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    M23(21.070,1.470)  MN(nfet)                               XI2/MTNX3  MN(nfet)
+         g: OP1                                                    g: OP1
+         s: 37                                                     s: XI2/net149
+         d: 34                                                     d: XI2/net148
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    M25(21.950,1.650)  MN(nfet)                               XI2/MTND3  MN(nfet)
+         g: Less                                                   g: Less
+         s: 34                                                     s: XI2/net148
+         d: gnd!                                                   d: gnd!
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    M9(14.030,-15.210)  MN(nfet)                              XI48/MTN1  MN(nfet)
+         g: 3                                                      g: XI48/BNOT
+         s: 31                                                     s: XI48/BBUFF
+         d: gnd!                                                   d: gnd!
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    M30(24.370,-14.810)  MN(nfet)                             XI48/MTNC  MN(nfet)
+         g: Cin                                                    g: Cin
+         s: 15                                                     s: XI48/CNOT
+         d: gnd!                                                   d: gnd!
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    M24(21.570,-14.510)  MN(nfet)                             XI48/MTN2  MN(nfet)
+         g: 9                                                      g: XI48/XORAB
+         s: 8                                                      s: XI48/XNORAB
+         d: gnd!                                                   d: gnd!
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    M22(20.830,-15.150)  MN(nfet)                             XI48/MTNZ2M1  MN(nfet)
+         g: 12                                                     g: XI48/precout
+         s: Cout                                                   s: Cout
+         d: gnd!                                                   d: gnd!
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    M39(30.690,2.790)  MN(nfet)                               XI2/MTNZM1  MN(nfet)
+         g: 22                                                     g: XI2/net93
+         s: OUT                                                    s: OUT
+         d: gnd!                                                   d: gnd!
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    M6(12.590,-14.590)  MN(nfet)                              XI48/MTNA  MN(nfet)
+         g: 1                                                      g: net23
+         s: 4                                                      s: XI48/ANOT
+         d: gnd!                                                   d: gnd!
+         b: 43                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    M27(22.750,1.490)  MN(nfet)                               XI2/MTNSD2  MN(nfet)
+         g: OP1                                                    g: OP1
+         s: 11                                                     s: XI2/SD2_bar
+         d: gnd!                                                   d: gnd!
+         b: 47                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    M11(14.490,-6.310)  MN(nfet)                              XI40/MTNA  MN(nfet)
+         g: 1                                                      g: net23
+         s: 6                                                      s: XI40/net28
+         d: gnd!                                                   d: gnd!
+         b: 45                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    M8(13.790,-6.310)  MN(nfet)                               XI40/MTNB  MN(nfet)
+         g: 2                                                      g: net22
+         s: 6                                                      s: XI40/net28
+         d: gnd!                                                   d: gnd!
+         b: 45                                                     ** missing net **
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    M10(14.150,2.090)  MN(nfet)                               XI41/MTNB  MN(nfet)
+         g: 2                                                      g: net22
+         d: 5                                                      ** XI41/net29 **
+         b: 44                                                     ** missing net **
+         ** gnd! **                                                d: gnd!
+         ** gnd! **                                                b: gnd!
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    M7(13.730,2.090)  MN(nfet)                                XI41/MTNA  MN(nfet)
+         g: 1                                                      g: net23
+         d: gnd!                                                   b: gnd!
+         b: 44                                                     ** missing net **
+         ** 5 **                                                   d: XI41/net29
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    R5(17.750,1.480)  R(SUBC)                                 ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M72(26.490,4.630)  MP(pfet)
+         M35(26.550,1.650)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M67(24.370,4.830)  MP(pfet)
+         M29(24.250,1.650)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M56(19.670,4.630)  MP(pfet)
+         M19(19.670,1.650)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 51    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X89/M9(6.530,-3.710)  MP(pfet)
+         X89/M10(6.950,-3.490)  MP(pfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X89/M7(5.270,-4.350)  MP(pfet)
+         X89/M8(5.910,-4.350)  MP(pfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    (_smn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X89/M3(6.330,-6.810)  MN(nfet)
+         X89/M4(6.750,-6.810)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    (_smn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X89/M2(5.710,-6.190)  MN(nfet)
+         X89/M1(5.270,-6.430)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X90/M9(6.530,5.170)  MP(pfet)
+         X90/M10(6.950,5.390)  MP(pfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    (_smp2v)                                                  ** missing injected instance **
+
+       Devices: 
+         X90/M7(5.270,4.530)  MP(pfet)
+         X90/M8(5.910,4.530)  MP(pfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    (_smn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X90/M3(6.330,2.070)  MN(nfet)
+         X90/M4(6.750,2.070)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    (_smn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X90/M2(5.710,2.690)  MN(nfet)
+         X90/M1(5.270,2.450)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X90/M6(4.030,4.610)  MP(pfet)
+         X90/M0(4.030,2.930)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X89/M6(4.030,-4.270)  MP(pfet)
+         X89/M0(4.030,-5.950)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X88/M3(0.500,4.410)  MP(pfet)
+         X88/M1(0.500,1.890)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 62    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X87/M3(0.500,-4.400)  MP(pfet)
+         X87/M0(-0.200,-6.920)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 63    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M52(16.210,-4.370)  MP(pfet)
+         M15(16.210,-7.270)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 64    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X90/M11(8.270,5.050)  MP(pfet)
+         X90/M5(8.270,1.710)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 65    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M69(25.190,-12.250)  MP(pfet)
+         M34(25.810,-14.970)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 66    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         X89/M11(8.270,-3.830)  MP(pfet)
+         X89/M5(8.270,-7.170)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 67    (_invb)                                                   ** missing injected instance **
+
+       Devices: 
+         M51(16.130,4.490)  MP(pfet)
+         M14(16.130,1.790)  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 68    ** missing injected instance **                           (_xori2v)
+
+                                                                 Devices: 
+                                                                   XI4/MTPS1  MP(pfet)
+                                                                   XI4/MTPD0  MP(pfet)
+                                                                   XI4/MTPS0  MP(pfet)
+                                                                   XI4/MTPD1  MP(pfet)
+                                                                   XI4/MTNS1  MN(nfet)
+                                                                   XI4/MTND1  MN(nfet)
+                                                                   XI4/MTNS0  MN(nfet)
+                                                                   XI4/MTND0  MN(nfet)
+                                                                   XI4/MTPSD  MP(pfet)
+                                                                   XI4/MTNSD  MN(nfet)
+                                                                   XI47/MTPAM2  MP(pfet)
+                                                                   XI47/MTNAM1  MN(nfet)
+                                                                   XI4/MTPZ  MP(pfet)
+                                                                   XI4/MTNZ  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 69    ** missing injected instance **                           (_xori2v)
+
+                                                                 Devices: 
+                                                                   XI1/MTPS1  MP(pfet)
+                                                                   XI1/MTPD0  MP(pfet)
+                                                                   XI1/MTPS0  MP(pfet)
+                                                                   XI1/MTPD1  MP(pfet)
+                                                                   XI1/MTNS1  MN(nfet)
+                                                                   XI1/MTND1  MN(nfet)
+                                                                   XI1/MTNS0  MN(nfet)
+                                                                   XI1/MTND0  MN(nfet)
+                                                                   XI1/MTPSD  MP(pfet)
+                                                                   XI1/MTNSD  MN(nfet)
+                                                                   XI0/MTPAM1  MP(pfet)
+                                                                   XI0/MTNAM2  MN(nfet)
+                                                                   XI1/MTPZ  MP(pfet)
+                                                                   XI1/MTNZ  MN(nfet)
+
+--------------------------------------------------------------------------------------------------------------
+
+ 70    ** missing injected instance **                           (_invx2v)
+
+                                                                 Devices: 
+                                                                   XI48/MTPZM1  MP(pfet)
+                                                                   XI48/MTNZM2  MN(nfet)
+                                                                   XI2/MTPD2  MP(pfet)
+                                                                   XI2/MTND2  MN(nfet)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              12         12            0            0
+
+   Nets:               32         32           19            0
+
+   Instances:           0          0            1            0    R(SUBC)
+                        6          6           12            0    _invb
+                        9          9            0            0    _invv
+                        0          0            0            3    _invx2v
+                        1          1            0            0    _mx2v
+                        1          1            0            0    _nand2v
+                        1          1            0            0    _nor2v
+                        0          0            4            0    _smn2b
+                        0          0            4            0    _smp2v
+                        2          2            0            0    _tgmb
+                        0          0            0            2    _xori2v
+                  -------    -------    ---------    ---------
+   Total Inst:         20         20           21            5
+
+
+o Statistics:
+
+   11 layout instances were filtered and their pins removed from adjoining nets.
+
+   24 layout mos transistors were reduced to 10.
+     14 mos transistors were deleted by parallel reduction.
+   24 source mos transistors were reduced to 10.
+     14 mos transistors were deleted by parallel reduction.
+
+   6 parallel layout resistors were reduced to 1.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD! GND! OP1 Less Cin OP0 B A Binvert Ainvert Cout OUT
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       (_invb)                                                   (_invv)
+         out: 3                                                    out: XI48/BNOT
+         sup1: vdd!                                                sup1: vdd!
+         sup2: gnd!                                                sup2: gnd!
+         in: 7                                                     ** missing net **
+         ** 2 **                                                   in: net22
+
+       Devices: 
+         M53(16.330,-12.070)  MP(pfet)                             XI48/MTPB  MP(pfet) 
+         M16(16.330,-14.870)  MN(nfet)                             XI48/MTNB  MN(nfet) 
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

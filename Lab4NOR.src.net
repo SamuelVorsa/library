@@ -1,0 +1,39 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: Lab4NOR
+* View Name:     schematic
+* Netlisted on:  Nov  4 09:34:09 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NOR
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NOR a b out
+*.PININFO a:I b:I out:I
+MTN1 out a gnd! gnd! nfet m=1 l=180n w=400n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 out b gnd! gnd! nfet m=1 l=180n w=400n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b net10 vdd! pfet m=1 l=180n w=1.99u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 net10 a vdd! vdd! pfet m=1 l=180n w=1.99u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+

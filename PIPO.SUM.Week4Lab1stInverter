@@ -1,0 +1,73 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.6-64b 09/01/2015 22:59 (sjfnl132) $
+          : sub-version  IC6.1.6-64b.500.13.2 
+Started at: 29-Nov-2016  09:25:11
+User Name : snv27
+Host Name : xunil-03.coe.drexel.edu
+Directory : /home/DREXEL/snv27/IBM_CMOS7RF
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+cmrf7sf/ca_min/layout           0        0       0        1      0      0         0      0             0      0     0     0       0       
+ECEC471_Lib/Week4Lab1stInverter/layout                          1        0       0        40     1      0         0      4             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+cmrf7sf/ca_min/layout           0        0          0          0          0          0     0        0         0         0        
+ECEC471_Lib/Week4Lab1stInverter/layout                          0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+PC              drawing         7       0         0        2        0        0        0             0    0   0   0     0      0      
+CA              drawing         14      0         0        11       0        0        0             0    0   0   0     0      0      
+M1              label           15      20        0        0        0        0        4             0    0   0   0     0      0      
+RX              drawing         2       0         0        8        0        0        0             0    0   0   0     0      0      
+M1              drawing         15      0         0        11       1        0        0             0    0   0   0     0      0      
+GRLOGIC         drawing         63      42        0        1        0        0        0             0    0   0   0     0      0      
+BP              drawing         10      0         0        2        0        0        0             0    0   0   0     0      0      
+NW              drawing         4       0         0        2        0        0        0             0    0   0   0     0      0      
+M1              pin             15      32        0        4        0        0        0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		1
+	Array Instances:		0
+	Polygons:			0
+	Paths:				1
+	Rectangles:			41
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			0
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				0
+	TextDisplay:		4
+	Cells:				2
+Design Libraries: 
+
+DEFINE cmrf7sf	/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/cdslib/cmrf7sf
+DEFINE ECEC471_Lib	/home/DREXEL/snv27/IBM_CMOS7RF/ECEC471_Lib

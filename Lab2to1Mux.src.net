@@ -1,0 +1,67 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: Lab2to1Mux
+* View Name:     schematic
+* Netlisted on:  Nov 28 09:05:22 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NAND a b out
+*.PININFO a:B b:B out:B
+MTN1 out a net13 gnd! nfet m=1 l=180n w=1.45u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 net13 b gnd! gnd! nfet m=1 l=180n w=1.45u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out a vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Week4Lab1stInverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Week4Lab1stInverter in out
+*.PININFO in:I out:I
+MTN0 out in gnd! gnd! nfet m=1 l=180n w=600n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out in vdd! vdd! pfet m=1 l=180n w=1.8u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab2to1Mux
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab2to1Mux IN0 IN1 Q SEL
+*.PININFO IN0:I IN1:I Q:I SEL:I
+XI3 net11 net10 Q / Lab4NAND
+XI1 SEL IN1 net10 / Lab4NAND
+XI0 net12 IN0 net11 / Lab4NAND
+XI2 SEL net12 / Week4Lab1stInverter
+.ENDS
+

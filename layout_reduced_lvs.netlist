@@ -1,0 +1,118 @@
+** CALIBRE LAYOUT NETLIST **
+** CALIBRE VERSION: v2015.3_25.16    Tue Sep 1 14:37:32 PDT 2015
+** LAYOUT NAME: 1bitALU6function.calibre.db (1bitALU6function)
+** NETLIST FILE: layout_reduced_lvs.netlist
+** GENERATED: Sun Mar 19 12:19:03 2017
+
+
+.SUBCKT 1bitALU6function OP1 Less Cin OP0 gnd! B A vdd! Binvert Ainvert Cout OUT 
+RR5 gnd! 46 SUBC 
+MM6 4 1 gnd! 43 nfet w=1.26e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM7 40 1 gnd! 44 nfet w=1.32e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM8 6 2 gnd! 45 nfet w=7.6e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM9 31 3 gnd! 43 nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM10 5 2 40 44 nfet w=1.32e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM11 gnd! 1 6 45 nfet w=7.6e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM12 9 4 31 43 nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM13 3 1 9 43 nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM14 gnd! 5 19 44 nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM15 gnd! 6 17 45 nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM16 gnd! 7 3 43 nfet w=1.48e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM17 12 8 3 43 nfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM18 15 9 12 43 nfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM19 32 10 gnd! 47 nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM20 37 11 32 47 nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM22 gnd! 12 Cout 43 nfet w=4.14628e-06 l=1.80982e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=2 $rf=0 $gcon=1 
+MM23 34 OP1 37 47 nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM24 8 9 gnd! 43 nfet w=1.4e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM25 gnd! Less 34 47 nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM26 18 15 8 43 nfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM27 11 OP1 gnd! 47 nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM28 9 Cin 18 43 nfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM29 35 17 gnd! 47 nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM30 gnd! Cin 15 43 nfet w=1.48e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM31 38 OP1 35 47 nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM33 36 11 38 47 nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM34 gnd! 18 10 43 nfet w=3.34628e-06 l=1.81216e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=2 $rf=0 $gcon=1 
+MM35 gnd! 19 36 47 nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM36 21 OP0 gnd! 47 nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM37 22 OP0 37 47 nfet w=2.12e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM38 38 21 22 47 nfet w=2.14e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM39 OUT 22 gnd! 47 nfet w=7.83196e-06 l=1.81819e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=4 $rf=0 $gcon=1 
+MM43 4 1 vdd! vdd! pfet w=2.52e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM44 5 1 vdd! vdd! pfet w=1.9e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM45 41 2 vdd! vdd! pfet w=1.68e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM46 31 3 vdd! vdd! pfet w=2.18e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM47 vdd! 2 5 vdd! pfet w=1.9e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM48 6 1 41 vdd! pfet w=1.68e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM49 9 1 31 vdd! pfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM50 3 4 9 vdd! pfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM51 vdd! 5 19 vdd! pfet w=3.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM52 vdd! 6 17 vdd! pfet w=3.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM53 vdd! 7 3 vdd! pfet w=2.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM54 12 9 3 vdd! pfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM55 15 8 12 vdd! pfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM56 32 10 vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM58 37 OP1 32 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM59 vdd! 12 Cout vdd! pfet w=4.14628e-06 l=1.80982e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=2 $rf=0 $gcon=1 
+MM60 34 11 37 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM61 8 9 vdd! vdd! pfet w=1.54e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM62 vdd! Less 34 vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM63 18 Cin 8 vdd! pfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM64 9 15 18 vdd! pfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM65 11 OP1 vdd! vdd! pfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM66 vdd! Cin 15 vdd! pfet w=2.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM67 35 17 vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM68 38 11 35 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM69 10 18 vdd! vdd! pfet w=5.62628e-06 l=1.80724e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=2 $rf=0 $gcon=1 
+MM70 36 OP1 38 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM72 vdd! 19 36 vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM73 21 OP0 vdd! vdd! pfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM74 22 21 37 vdd! pfet w=2.5e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM75 38 OP0 22 vdd! pfet w=2.5e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MM76 OUT 22 vdd! vdd! pfet w=8.15196e-06 l=1.81748e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=4 $rf=0 $gcon=1 
+MX87/M0 27 B gnd! X87/6 nfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
+MX87/M3 vdd! B 27 vdd! pfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
+MX88/M1 gnd! A 26 X88/6 nfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
+MX88/M3 vdd! A 26 vdd! pfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
+MX89/M0 X89/8 Binvert gnd! X89/14 nfet w=4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M1 X89/10 27 gnd! X89/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M2 X89/9 Binvert X89/10 X89/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 
++ $gcon=1 
+MX89/M3 X89/11 X89/8 X89/9 X89/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M4 gnd! B X89/11 X89/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M5 gnd! X89/9 2 X89/14 nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MX89/M6 X89/8 Binvert vdd! vdd! pfet w=7e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M7 X89/12 27 vdd! vdd! pfet w=2.02426e-06 l=1.8377e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+MX89/M8 X89/9 X89/8 X89/12 vdd! pfet w=1.93314e-06 l=1.81053e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M9 X89/13 Binvert X89/9 vdd! pfet w=1.93314e-06 l=1.81053e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX89/M10 vdd! B X89/13 vdd! pfet w=1.99113e-06 l=1.82811e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+MX89/M11 vdd! X89/9 2 vdd! pfet w=3.07799e-06 l=1.81157e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+MX90/M0 X90/8 Ainvert gnd! X90/14 nfet w=4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M1 X90/10 26 gnd! X90/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M2 X90/9 Ainvert X90/10 X90/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 
++ $gcon=1 
+MX90/M3 X90/11 X90/8 X90/9 X90/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M4 gnd! A X90/11 X90/14 nfet w=1.27314e-06 l=1.81599e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M5 gnd! X90/9 1 X90/14 nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
+MX90/M6 X90/8 Ainvert vdd! vdd! pfet w=7e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M7 X90/12 26 vdd! vdd! pfet w=2.02426e-06 l=1.8377e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+MX90/M8 X90/9 X90/8 X90/12 vdd! pfet w=1.93314e-06 l=1.81053e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M9 X90/13 Ainvert X90/9 vdd! pfet w=1.93314e-06 l=1.81053e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
++ 
+MX90/M10 vdd! A X90/13 vdd! pfet w=1.99113e-06 l=1.82811e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+MX90/M11 vdd! X90/9 1 vdd! pfet w=3.07799e-06 l=1.81157e-07 $m=1 $mswitch=0 $psp=0 $bentgate=1 $nf=1 $rf=0 $gcon=1 
+.ENDS

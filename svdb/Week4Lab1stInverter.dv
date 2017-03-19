@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Week4Lab1stInverter.dv
+dv_start matched                                  
+dv_cell {Week4Lab1stInverter} {Week4Lab1stInverter} matched
+dv_obj_count -transformed_nets {4 4} -transformed_inst {1 1} -transformed_port {4 4}
+dv_end

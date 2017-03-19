@@ -1,0 +1,15 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.06s.
+
+ 
+Loading IBM PDK cmrf7sf procedures... 
+IBM PDK cmrf7sf Device Status Table loaded. 
+ 
+
+Running Artist Hierarchical Netlisting ...
+
+*WARNING* (TECH-2000203): Technology library 'cmrf7sf_digital_layout' is attached to technology library 'cmrf7sf'.
+ The local techDB takes precedence over property attachment in the new OA attachment policy.
+
+Loading cdf.cxt 
+End netlisting Mar 19 12:18:00 2017
+

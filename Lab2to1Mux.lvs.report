@@ -1,0 +1,526 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         Lab2to1Mux.lvs.report
+LAYOUT NAME:              /home/DREXEL/snv27/IBM_CMOS7RF/Lab2to1Mux.sp ('Lab2to1Mux')
+SOURCE NAME:              /home/DREXEL/snv27/IBM_CMOS7RF/Lab2to1Mux.src.net ('Lab2to1Mux')
+RULE FILE:                /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+CREATION TIME:            Mon Nov 28 09:05:26 2016
+CURRENT DIRECTORY:        /home/DREXEL/snv27/IBM_CMOS7RF
+USER NAME:                snv27
+CALIBRE VERSION:          v2015.3_25.16    Tue Sep 1 14:37:32 PDT 2015
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        Lab2to1Mux                    Lab2to1Mux
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD" "Vdd" "vdd" "VDD:P" "DVDD" "DVDD:P" "VDD!" "?VDD?" "vdd?" "inh_vdd" "INH_VDD" "VCC"
+                                          "Vcc" "vcc" "?VCC?"
+   LVS GROUND NAME                        "VSS" "Vss" "vss" "VSS:G" "DVSS" "DVSS:P" "?VSS?" "vss?" "GND" "GND:G" "GND!" "?GND?"
+                                          "sub!" "sub?" "inh_gnd" "INH_GND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            NO
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               RD RE YB
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES [ TOLERANCE L 5 rf 0 psp 0 nf 0 mSwitch 0 m 0 ]
+   LVS REDUCE PARALLEL BIPOLAR            NO
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  R(opndres)  SERIES POS NEG [ TOLERANCE w 0 l 0 pbar 0 ]
+   LVS REDUCE  R(oppdres)  SERIES POS NEG [ TOLERANCE w 0 l 0 pbar 0 ]
+   LVS REDUCE  R(opppcres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(oprrpres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(oprppres)  SERIES POS NEG [ TOLERANCE w 0 bp 0 pbar 0 ]
+   LVS REDUCE  R(k1res)  SERIES POS NEG [ TOLERANCE w 0 ]
+   LVS REDUCE  R(sblkndres)  SERIES POS NEG [ TOLERANCE w 0 pbar 0 ]
+   LVS REDUCE  R(sblkpdres)  SERIES POS NEG [ TOLERANCE w 0 pbar 0 ]
+   LVS REDUCE  R(rr_serpentine)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 m 0 ]
+   LVS REDUCE  R(lvsres)  SERIES POS NEG
+   LVS REDUCE  R(lvsres)  PARALLEL
+   LVS REDUCE  PCDCAP  PARALLEL
+   LVS REDUCE  PCDCAP33  PARALLEL
+   LVS REDUCE  D(dipdnw)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(sbd)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(sbdnw)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  psbd  PARALLEL [ TOLERANCE w 0 l 0 nf 0 mSwitch 0 ]
+   LVS REDUCE  Q(divpnp)  PARALLEL NO
+   LVS REDUCE  dindpw  PARALLEL [ TOLERANCE l 0 w 0 nf 0 ]
+   LVS REDUCE  esdnsh_base  PARALLEL NO
+   LVS REDUCE  esdpsh_base  PARALLEL NO
+   LVS REDUCE  esdvpnpnw  PARALLEL
+   LVS REDUCE  esdndsx  PARALLEL
+   LVS REDUCE  D(esdpnpi)  PARALLEL
+   LVS REDUCE  D(esdndpi)  PARALLEL
+   LVS REDUCE  D(tdpdnw)  PARALLEL
+   LVS REDUCE  tdndsx  PARALLEL
+   LVS REDUCE  c(mim)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(mimhd)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(mimhk)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 setind 5 ]
+   LVS REDUCE  c(dualmim)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  c(dualmimhd)  PARALLEL [ TOLERANCE l 0 w 0 hd 0 bp 0 setind 5 ]
+   LVS REDUCE  R(oppdres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(opndres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(opppcres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(oprrpres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(oprppres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 s 0 ]
+   LVS REDUCE  R(k1res)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(sblkndres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(sblkpdres)  PARALLEL [ TOLERANCE l 0 w 0 s 0 ]
+   LVS REDUCE  R(rr_serpentine)  PARALLEL [ TOLERANCE w 0 l 0 n 0 bp 0 ]
+   LVS REDUCE  jfetjc  PARALLEL [ TOLERANCE w 0 l 0 nf 0 m 0 par 0 mSwitch 0 ]
+   LVS REDUCE  vlnpn  PARALLEL [ TOLERANCE exw 0 exl 0 nstripes 0 m 0 par 0 mSwitch 0 ]
+   LVS REDUCE  mosvar  PARALLEL
+   LVS REDUCE  mosvar50  PARALLEL
+   LVS REDUCE  p5pcdcap50  PARALLEL
+   LVS REDUCE  pcap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  D(havar)  PARALLEL
+   LVS REDUCE  diffhavar  PARALLEL
+   LVS REDUCE  R(SUBC)  PARALLEL
+   LVS REDUCE  efuse  PARALLEL
+   LVS REDUCE  C(vncap)  PARALLEL NO
+   LVS REDUCE  nfettw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  nfet33tw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  nfet50tw  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfethv)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MN(nfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvtnfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvt2nfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  M(zvtnfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfethv)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet33)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(pfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCE  MP(p5pfet50)  PARALLEL [ TOLERANCE l 5 rf 0 psp 0 gcon 0 mSwitch 0 ]
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  C(CP)  OPEN
+   LVS FILTER  D(DP)  OPEN
+   LVS FILTER  L(LP)  SHORT
+   LVS FILTER  R(RP)  SHORT
+   LVS FILTER  D(diodenwx)  OPEN
+   LVS FILTER  D(diodenx)  OPEN
+   LVS FILTER  D(diodepnw)  OPEN
+   LVS FILTER  D(diodepisx)  OPEN
+   LVS FILTER  D(diodepwpi)  OPEN
+   LVS FILTER  D(diodepisx)  OPEN
+   LVS FILTER  D(diodepwpi)  OPEN
+
+   // Trace Property
+
+   TRACE PROPERTY  r(opppcres)  w w 1
+   TRACE PROPERTY  r(oprrpres)  w w 1
+   TRACE PROPERTY  r(oprppres)  w w 1
+   TRACE PROPERTY  r(opndres)  w w 1
+   TRACE PROPERTY  r(oppdres)  w w 1
+   TRACE PROPERTY  r(k1res)  w w 1
+   TRACE PROPERTY  r(sblkndres)  w w 1
+   TRACE PROPERTY  r(sblkpdres)  w w 1
+   TRACE PROPERTY  r(opppcres)  l l 1
+   TRACE PROPERTY  r(oprrpres)  l l 1
+   TRACE PROPERTY  r(oprppres)  l l 1
+   TRACE PROPERTY  r(opndres)  l l 1
+   TRACE PROPERTY  r(oppdres)  l l 1
+   TRACE PROPERTY  r(k1res)  l l 1
+   TRACE PROPERTY  r(sblkndres)  l l 1
+   TRACE PROPERTY  r(sblkpdres)  l l 1
+   TRACE PROPERTY  r(opppcres)  bp bp 0
+   TRACE PROPERTY  r(oprrpres)  bp bp 0
+   TRACE PROPERTY  r(oprppres)  bp bp 0
+   TRACE PROPERTY  r(opppcres)  s s 1
+   TRACE PROPERTY  r(oprrpres)  s s 1
+   TRACE PROPERTY  r(oprppres)  s s 1
+   TRACE PROPERTY  r(opndres)  s s 1
+   TRACE PROPERTY  r(oppdres)  s s 1
+   TRACE PROPERTY  r(k1res)  s s 1
+   TRACE PROPERTY  r(sblkndres)  s s 1
+   TRACE PROPERTY  r(sblkpdres)  s s 1
+   TRACE PROPERTY  r(opppcres)  pbar pbar 1
+   TRACE PROPERTY  r(oprrpres)  pbar pbar 1
+   TRACE PROPERTY  r(oprppres)  pbar pbar 1
+   TRACE PROPERTY  r(opndres)  pbar pbar 1
+   TRACE PROPERTY  r(oppdres)  pbar pbar 1
+   TRACE PROPERTY  r(sblkndres)  pbar pbar 1
+   TRACE PROPERTY  r(sblkpdres)  pbar pbar 1
+   TRACE PROPERTY  jfetjc  w w 1
+   TRACE PROPERTY  jfetjc  l l 1
+   TRACE PROPERTY  jfetjc  nf nf 0
+   TRACE PROPERTY  jfetjc  m m 0
+   TRACE PROPERTY  jfetjc  par par 0
+   TRACE PROPERTY  jfetjc  mswitch mswitch 0
+   TRACE PROPERTY  vlnpn  exw exw 1
+   TRACE PROPERTY  vlnpn  exl exl 1
+   TRACE PROPERTY  vlnpn  nstripes nstripes 0
+   TRACE PROPERTY  vlnpn  m m 0
+   TRACE PROPERTY  vlnpn  par par 0
+   TRACE PROPERTY  vlnpn  mswitch mswitch 0
+   TRACE PROPERTY  r(rr_serpentine)  w w 1
+   TRACE PROPERTY  r(rr_serpentine)  l l 1
+   TRACE PROPERTY  r(rr_serpentine)  n n 0
+   TRACE PROPERTY  r(rr_serpentine)  bp bp 0
+   TRACE PROPERTY  r(rr_serpentine)  m m 0
+   TRACE PROPERTY  d(sbd)  l l 1
+   TRACE PROPERTY  d(sbd)  w w 1
+   TRACE PROPERTY  d(sbd)  nf nf 0
+   TRACE PROPERTY  d(sbd)  m m 0
+   TRACE PROPERTY  d(sbdnw)  l l 1
+   TRACE PROPERTY  d(sbdnw)  w w 1
+   TRACE PROPERTY  d(sbdnw)  nf nf 0
+   TRACE PROPERTY  d(sbdnw)  m m 0
+   TRACE PROPERTY  psbd  w w 1
+   TRACE PROPERTY  psbd  l l 1
+   TRACE PROPERTY  psbd  nf nf 0
+   TRACE PROPERTY  psbd  m m 0
+   TRACE PROPERTY  psbd  par par 0
+   TRACE PROPERTY  psbd  mswitch mswitch 0
+   TRACE PROPERTY  d(havar)  rxl rxl 1
+   TRACE PROPERTY  d(havar)  rxw rxw 1
+   TRACE PROPERTY  d(havar)  nastripes nastripes 0
+   TRACE PROPERTY  diffhavar  w w 1
+   TRACE PROPERTY  diffhavar  l l 1
+   TRACE PROPERTY  diffhavar  nf nf 0
+   TRACE PROPERTY  d(dipdnw)  w w 1
+   TRACE PROPERTY  d(dipdnw)  l l 1
+   TRACE PROPERTY  d(dipdnw)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  w w 1
+   TRACE PROPERTY  q(divpnp)  l l 1
+   TRACE PROPERTY  q(divpnp)  nf nf 0
+   TRACE PROPERTY  q(divpnp)  m m 0
+   TRACE PROPERTY  dindpw  w w 1
+   TRACE PROPERTY  dindpw  l l 1
+   TRACE PROPERTY  dindpw  nf nf 0
+   TRACE PROPERTY  dindpw  m m 0
+   TRACE PROPERTY  esdnsh_base  wesd wesd 1
+   TRACE PROPERTY  esdnsh_base  lesd lesd 1
+   TRACE PROPERTY  esdnsh_base  nf nf 0
+   TRACE PROPERTY  esdnsh_base  ldop ldop 1
+   TRACE PROPERTY  esdnsh_base  lsop lsop 1
+   TRACE PROPERTY  esdnsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdpsh_base  wesd wesd 1
+   TRACE PROPERTY  esdpsh_base  lesd lesd 1
+   TRACE PROPERTY  esdpsh_base  nf nf 0
+   TRACE PROPERTY  esdpsh_base  ldop ldop 1
+   TRACE PROPERTY  esdpsh_base  lsop lsop 1
+   TRACE PROPERTY  esdpsh_base  esdoxide esdoxide 0
+   TRACE PROPERTY  esdvpnpnw  area area 1
+   TRACE PROPERTY  esdvpnpnw  perim perim 1
+   TRACE PROPERTY  esdvpnpnw  nanod nanod 0
+   TRACE PROPERTY  esdndsx  area area 1
+   TRACE PROPERTY  esdndsx  perim perim 1
+   TRACE PROPERTY  esdndsx  ncath ncath 0
+   TRACE PROPERTY  d(esdpnpi)  a a 1
+   TRACE PROPERTY  d(esdpnpi)  perim perim 1
+   TRACE PROPERTY  d(esdpnpi)  nanod nanod 0
+   TRACE PROPERTY  d(esdndpi)  a a 1
+   TRACE PROPERTY  d(esdndpi)  perim perim 1
+   TRACE PROPERTY  d(esdndpi)  ncath ncath 0
+   TRACE PROPERTY  ind  n n 0
+   TRACE PROPERTY  ind  x x 9
+   TRACE PROPERTY  ind  w w 1
+   TRACE PROPERTY  ind  s s 1
+   TRACE PROPERTY  ind  nlev nlev 0
+   TRACE PROPERTY  ind  grnd grnd 0
+   TRACE PROPERTY  ind  wu wu 1
+   TRACE PROPERTY  symind  n n 0
+   TRACE PROPERTY  symind  x x 9
+   TRACE PROPERTY  symind  w w 1
+   TRACE PROPERTY  symind  s s 1
+   TRACE PROPERTY  symind  nlev nlev 0
+   TRACE PROPERTY  symind  grnd grnd 0
+   TRACE PROPERTY  symind  wu wu 1
+   TRACE PROPERTY  symind  xov xov 0
+   TRACE PROPERTY  indline  l l 1
+   TRACE PROPERTY  indline  w w 9
+   TRACE PROPERTY  indline  ind ind 1
+   TRACE PROPERTY  indline  grnd grnd 0
+   TRACE PROPERTY  singlewire  w w 0
+   TRACE PROPERTY  singlewire  l l 0
+   TRACE PROPERTY  singlewire  layerads layerads 0
+   TRACE PROPERTY  singlewire  nlev nlev 0
+   TRACE PROPERTY  singlewire  s s 1
+   TRACE PROPERTY  singlewire  overads overads 0
+   TRACE PROPERTY  singlewire  shieldsads shieldsads 0
+   TRACE PROPERTY  coupledwires  l l 0
+   TRACE PROPERTY  coupledwires  w w 0
+   TRACE PROPERTY  coupledwires  d d 1
+   TRACE PROPERTY  coupledwires  s s 1
+   TRACE PROPERTY  coupledwires  layerads layerads 0
+   TRACE PROPERTY  coupledwires  nlev nlev 0
+   TRACE PROPERTY  coupledwires  overads overads 0
+   TRACE PROPERTY  coupledwires  shieldsads shieldsads 0
+   TRACE PROPERTY  c(dualmim)  w w 1
+   TRACE PROPERTY  c(dualmim)  l l 1
+   TRACE PROPERTY  c(dualmim)  m m 0
+   TRACE PROPERTY  c(dualmim)  nlev nlev 0
+   TRACE PROPERTY  c(dualmim)  lm lm 0
+   TRACE PROPERTY  c(dualmim)  hd hd 0
+   TRACE PROPERTY  c(dualmim)  bp bp 0
+   TRACE PROPERTY  c(dualmimhd)  w w 1
+   TRACE PROPERTY  c(dualmimhd)  l l 1
+   TRACE PROPERTY  c(dualmimhd)  m m 0
+   TRACE PROPERTY  c(dualmimhd)  nlev nlev 0
+   TRACE PROPERTY  c(dualmimhd)  lm lm 0
+   TRACE PROPERTY  c(dualmimhd)  hd hd 0
+   TRACE PROPERTY  c(dualmimhd)  bp bp 0
+   TRACE PROPERTY  c(mim)  w w 1
+   TRACE PROPERTY  c(mim)  l l 1
+   TRACE PROPERTY  c(mim)  m m 0
+   TRACE PROPERTY  c(mim)  nlev nlev 0
+   TRACE PROPERTY  c(mim)  lm lm 0
+   TRACE PROPERTY  c(mim)  hd hd 0
+   TRACE PROPERTY  c(mim)  bp bp 0
+   TRACE PROPERTY  c(mimhd)  w w 1
+   TRACE PROPERTY  c(mimhd)  l l 1
+   TRACE PROPERTY  c(mimhd)  m m 0
+   TRACE PROPERTY  c(mimhd)  nlev nlev 0
+   TRACE PROPERTY  c(mimhd)  lm lm 0
+   TRACE PROPERTY  c(mimhd)  hd hd 0
+   TRACE PROPERTY  c(mimhd)  bp bp 0
+   TRACE PROPERTY  c(mimhk)  w w 1
+   TRACE PROPERTY  c(mimhk)  l l 1
+   TRACE PROPERTY  c(mimhk)  m m 0
+   TRACE PROPERTY  c(mimhk)  nlev nlev 0
+   TRACE PROPERTY  c(mimhk)  lm lm 0
+   TRACE PROPERTY  c(mimhk)  bp bp 0
+   TRACE PROPERTY  c(vncap)  w w 1
+   TRACE PROPERTY  c(vncap)  l l 1
+   TRACE PROPERTY  c(vncap)  botlev botlev 0
+   TRACE PROPERTY  c(vncap)  toplev toplev 0
+   TRACE PROPERTY  c(vncap)  lm lm 0
+   TRACE PROPERTY  c(vncap)  bp bp 0
+   TRACE PROPERTY  mosvar  l l 1
+   TRACE PROPERTY  mosvar  w w 1
+   TRACE PROPERTY  mosvar  xrep xrep 0
+   TRACE PROPERTY  mosvar  yrep yrep 0
+   TRACE PROPERTY  p5pcdcap50  l l 1
+   TRACE PROPERTY  p5pcdcap50  w w 1
+   TRACE PROPERTY  p5pcdcap50  xrep xrep 0
+   TRACE PROPERTY  p5pcdcap50  yrep yrep 0
+   TRACE PROPERTY  mosvar50  l l 1
+   TRACE PROPERTY  mosvar50  w w 1
+   TRACE PROPERTY  mosvar50  xrep xrep 0
+   TRACE PROPERTY  mosvar50  yrep yrep 0
+   TRACE PROPERTY  mosvar50  m m 0
+   TRACE PROPERTY  pcap  l l 1
+   TRACE PROPERTY  pcap  w w 1
+   TRACE PROPERTY  pcap  xrep xrep 0
+   TRACE PROPERTY  pcap  yrep yrep 0
+   TRACE PROPERTY  diffmosvar  w w 1
+   TRACE PROPERTY  diffmosvar  l l 1
+   TRACE PROPERTY  diffmosvar  nf nf 0
+   TRACE PROPERTY  pcdcap  l l 1
+   TRACE PROPERTY  pcdcap  w w 1
+   TRACE PROPERTY  pcdcap  m m 0
+   TRACE PROPERTY  pcdcap33  l l 1
+   TRACE PROPERTY  pcdcap33  w w 1
+   TRACE PROPERTY  pcdcap33  m m 0
+   TRACE PROPERTY  bondpad  area area 1
+   TRACE PROPERTY  bondpad  perim perim 1
+   TRACE PROPERTY  bondpad  grnd grnd 0
+   TRACE PROPERTY  bondpad  nlev nlev 0
+   TRACE PROPERTY  bondpad  rect rect 0
+
+   // User Trace Property
+
+   TRACE PROPERTY  mn(nfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfethv)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mn(nfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfethv)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(pfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  mp(p5pfet50)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  m(zvtnfet)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  m(zvtnfet33)  l w gcon rf nf bentgate psp mswitch m
+   TRACE PROPERTY  nfettw  l w gcon m rf nf psp bentgate mswitch
+   TRACE PROPERTY  nfet33tw  l w gcon m rf nf psp bentgate mswitch
+   TRACE PROPERTY  nfet50tw  l w gcon m rf nf psp bentgate mswitch
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         Lab2to1Mux
+SOURCE CELL NAME:         Lab2to1Mux
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:              12        12
+
+ Instances:          7         7         MN (4 pins)
+                     7         7         MP (4 pins)
+                     9         0    *    D (2 pins)
+                ------    ------
+ Total Inst:        23        14
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               9         9
+
+ Instances:          1         1         _invv (4 pins)
+                     3         3         _nand2v (5 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            0            0
+
+   Nets:                9          9            0            0
+
+   Instances:           1          1            0            0    _invv
+                        3          3            0            0    _nand2v
+                  -------    -------    ---------    ---------
+   Total Inst:          4          4            0            0
+
+
+o Statistics:
+
+   9 layout instances were filtered and their pins removed from adjoining nets.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD! GND! SEL IN0 Q IN1
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

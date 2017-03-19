@@ -1,0 +1,195 @@
+** CALIBRE SOURCE NETLIST **
+** CALIBRE VERSION: v2015.3_25.16    Tue Sep 1 14:37:32 PDT 2015
+** SOURCE NAME: /home/DREXEL/snv27/IBM_CMOS7RF/1bitALU6function.src.net (1bitALU6function)
+** NETLIST FILE: source_reduced_lvs.netlist
+** GENERATED: Sun Mar 19 12:19:03 2017
+
+
+.SUBCKT 1bitALU6function A Ainvert B Binvert Cin Cout Less OP0 OP1 OUT 
+MXI48/MTNZM2 net31 XI48/predrive gnd! gnd! nfet w=3.34e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 
++ $rf=0 $gcon=1 
+MXI48/MTNX6 XI48/CNOT XI48/XORAB XI48/precout gnd! nfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTNX5 XI48/precout XI48/XNORAB XI48/BNOT gnd! nfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTNX1 XI48/BBUFF XI48/ANOT XI48/XORAB gnd! nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTNX2 XI48/XORAB net23 XI48/BNOT gnd! nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI48/MTNX4 XI48/XORAB Cin XI48/predrive gnd! nfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTNX3 XI48/predrive XI48/CNOT XI48/XNORAB gnd! nfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTNC XI48/CNOT Cin gnd! gnd! nfet w=1.48e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI48/MTNB XI48/BNOT net22 gnd! gnd! nfet w=1.48e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI48/MTN1 XI48/BBUFF XI48/BNOT gnd! gnd! nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI48/MTNA XI48/ANOT net23 gnd! gnd! nfet w=1.26e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI48/MTN2 XI48/XNORAB XI48/XORAB gnd! gnd! nfet w=1.4e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI48/MTNZ2M1 Cout XI48/precout gnd! gnd! nfet w=4.14e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 
++ $rf=0 $gcon=1 
+MXI48/MTPZM1 net31 XI48/predrive vdd! vdd! pfet w=5.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 
++ $rf=0 $gcon=1 
+MXI48/MTPX6 XI48/precout XI48/XNORAB XI48/CNOT vdd! pfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTPX5 XI48/BNOT XI48/XORAB XI48/precout vdd! pfet w=8.4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTPZ2M2 Cout XI48/precout vdd! vdd! pfet w=4.14e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 
++ $rf=0 $gcon=1 
+MXI48/MTPX1 XI48/XORAB net23 XI48/BBUFF vdd! pfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI48/MTPX2 XI48/BNOT XI48/ANOT XI48/XORAB vdd! pfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTPX4 XI48/predrive XI48/CNOT XI48/XORAB vdd! pfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTPX3 XI48/XNORAB Cin XI48/predrive vdd! pfet w=9.8e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI48/MTPB XI48/BNOT net22 vdd! vdd! pfet w=2.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI48/MTP1 XI48/BBUFF XI48/BNOT vdd! vdd! pfet w=2.18e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI48/MTPA XI48/ANOT net23 vdd! vdd! pfet w=2.52e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI48/MTPC XI48/CNOT Cin vdd! vdd! pfet w=2.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI48/MTP2 XI48/XNORAB XI48/XORAB vdd! vdd! pfet w=1.54e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI0/MTNAM2 net33 A gnd! gnd! nfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
++ 
+MXI0/MTPAM1 net33 A vdd! vdd! pfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
++ 
+MXI47/MTNAM1 net26 B gnd! gnd! nfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
++ 
+MXI47/MTPAM2 net26 B vdd! vdd! pfet w=3.36e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=2 $rf=0 $gcon=1 
++ 
+MXI1/MTNS1 XI1/net72 Ainvert XI1/net40 gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI1/MTND0 XI1/net43 A gnd! gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI1/MTNZ net23 XI1/net72 gnd! gnd! nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI1/MTND1 XI1/net40 net33 gnd! gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI1/MTNS0 XI1/net72 XI1/S0 XI1/net43 gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI1/MTNSD XI1/S0 Ainvert gnd! gnd! nfet w=4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI1/MTPS1 XI1/net72 Ainvert XI1/net68 vdd! pfet w=1.93e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI1/MTPD1 XI1/net59 net33 vdd! vdd! pfet w=2.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI1/MTPD0 XI1/net68 A vdd! vdd! pfet w=1.99e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI1/MTPS0 XI1/net72 XI1/S0 XI1/net59 vdd! pfet w=1.93e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI1/MTPZ net23 XI1/net72 vdd! vdd! pfet w=3.08e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI1/MTPSD XI1/S0 Ainvert vdd! vdd! pfet w=7e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTNS1 XI4/net72 Binvert XI4/net40 gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI4/MTND0 XI4/net43 B gnd! gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI4/MTNZ net22 XI4/net72 gnd! gnd! nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTND1 XI4/net40 net26 gnd! gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTNS0 XI4/net72 XI4/S0 XI4/net43 gnd! nfet w=1.27e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI4/MTNSD XI4/S0 Binvert gnd! gnd! nfet w=4e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTPS1 XI4/net72 Binvert XI4/net68 vdd! pfet w=1.93e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI4/MTPD1 XI4/net59 net26 vdd! vdd! pfet w=2.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTPD0 XI4/net68 B vdd! vdd! pfet w=1.99e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 $gcon=1 
++ 
+MXI4/MTPS0 XI4/net72 XI4/S0 XI4/net59 vdd! pfet w=1.93e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI4/MTPZ net22 XI4/net72 vdd! vdd! pfet w=3.08e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI4/MTPSD XI4/S0 Binvert vdd! vdd! pfet w=7e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI40/MTNZ net30 XI40/net28 gnd! gnd! nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI40/MTNB XI40/net28 net22 gnd! gnd! nfet w=7.6e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI40/MTNA XI40/net28 net23 gnd! gnd! nfet w=7.6e-07 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI40/MTPZ net30 XI40/net28 vdd! vdd! pfet w=3.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI40/MTPA XI40/net28 net23 XI40/net34 vdd! pfet w=1.68e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI40/MTPB XI40/net34 net22 vdd! vdd! pfet w=1.68e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTND3 XI2/net148 Less gnd! gnd! nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTND2 XI2/net151 net31 gnd! gnd! nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTND1 XI2/net154 net30 gnd! gnd! nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTNSD2 XI2/SD2_bar OP1 gnd! gnd! nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTND0 XI2/net157 net34 gnd! gnd! nfet w=1.66e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTNX5 XI2/net93 OP0 XI2/net149 gnd! nfet w=2.12e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTNSD1 XI2/net131 OP0 gnd! gnd! nfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTNX4 XI2/net93 XI2/net131 XI2/net160 gnd! nfet w=2.14e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI2/MTNZM1 OUT XI2/net93 gnd! gnd! nfet w=7.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=4 $rf=0 
++ $gcon=1 
+MXI2/MTNX0 XI2/net160 XI2/SD2_bar XI2/net157 gnd! nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI2/MTNX1 XI2/net160 OP1 XI2/net154 gnd! nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTNX2 XI2/net149 XI2/SD2_bar XI2/net151 gnd! nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI2/MTNX3 XI2/net149 OP1 XI2/net148 gnd! nfet w=1.84e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTPD0 XI2/net157 net34 vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPSD2 XI2/SD2_bar OP1 vdd! vdd! pfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPD1 XI2/net154 net30 vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPD3 XI2/net148 Less vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPD2 XI2/net151 net31 vdd! vdd! pfet w=2.2e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPX5 XI2/net93 XI2/net131 XI2/net149 vdd! pfet w=2.5e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI2/MTPX4 XI2/net93 OP0 XI2/net160 vdd! pfet w=2.5e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTPSD1 XI2/net131 OP0 vdd! vdd! pfet w=1.82e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI2/MTPZM1 OUT XI2/net93 vdd! vdd! pfet w=8.16e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=4 $rf=0 
++ $gcon=1 
+MXI2/MTPX1 XI2/net160 XI2/SD2_bar XI2/net154 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI2/MTPX0 XI2/net160 OP1 XI2/net157 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTPX2 XI2/net149 OP1 XI2/net151 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI2/MTPX3 XI2/net149 XI2/SD2_bar XI2/net148 vdd! pfet w=2.42e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 
++ $nf=1 $rf=0 $gcon=1 
+MXI41/MTNA XI41/net29 net23 XI41/net34 gnd! nfet w=1.32e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 
++ $rf=0 $gcon=1 
+MXI41/MTNB XI41/net34 net22 gnd! gnd! nfet w=1.32e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI41/MTNZ net34 XI41/net29 gnd! gnd! nfet w=1.62e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI41/MTPB XI41/net29 net22 vdd! vdd! pfet w=1.9e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI41/MTPA XI41/net29 net23 vdd! vdd! pfet w=1.9e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+MXI41/MTPZ net34 XI41/net29 vdd! vdd! pfet w=3.02e-06 l=1.8e-07 $m=1 $mswitch=0 $psp=0 $bentgate=0 $nf=1 $rf=0 
++ $gcon=1 
+.ENDS
+
+.GLOBAL gnd! vdd! 

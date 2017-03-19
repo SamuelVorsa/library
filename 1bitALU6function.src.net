@@ -1,0 +1,279 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: 1bitALU6function
+* View Name:     schematic
+* Netlisted on:  Mar 19 12:17:59 2017
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    ADDF_F
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ADDF_F A B CIN COUT SUM inh_gnd inh_vdd
+*.PININFO A:I B:I CIN:I COUT:O SUM:O inh_gnd:B inh_vdd:B
+MTNZM2 SUM predrive inh_gnd inh_gnd nfet m=1 l=180.0n w=1.67u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX6 CNOT XORAB precout inh_gnd nfet m=1 l=180.0n w=840.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZM1 SUM predrive inh_gnd inh_gnd nfet m=1 l=180.0n w=1.67u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX5 precout XNORAB BNOT inh_gnd nfet m=1 l=180.0n w=840.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX1 BBUFF ANOT XORAB inh_gnd nfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX2 XORAB A BNOT inh_gnd nfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX4 XORAB CIN predrive inh_gnd nfet m=1 l=180.0n w=980.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX3 predrive CNOT XNORAB inh_gnd nfet m=1 l=180.0n w=980.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNC CNOT CIN inh_gnd inh_gnd nfet m=1 l=180.0n w=1.48u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNB BNOT B inh_gnd inh_gnd nfet m=1 l=180.0n w=1.48u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTN1 BBUFF BNOT inh_gnd inh_gnd nfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNA ANOT A inh_gnd inh_gnd nfet m=1 l=180.0n w=1.26u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTN2 XNORAB XORAB inh_gnd inh_gnd nfet m=1 l=180.0n w=1.4u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZ2M2 COUT precout inh_gnd inh_gnd nfet m=1 l=180.0n w=2.07u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZ2M1 COUT precout inh_gnd inh_gnd nfet m=1 l=180.0n w=2.07u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM2 SUM predrive inh_vdd inh_vdd pfet m=1 l=180.0n w=2.81u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM1 SUM predrive inh_vdd inh_vdd pfet m=1 l=180.0n w=2.81u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX6 precout XNORAB CNOT inh_vdd pfet m=1 l=180.0n w=840.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX5 BNOT XORAB precout inh_vdd pfet m=1 l=180.0n w=840.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZ2M2 COUT precout inh_vdd inh_vdd pfet m=1 l=180.0n w=2.07u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZ2M1 COUT precout inh_vdd inh_vdd pfet m=1 l=180.0n w=2.07u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX1 XORAB A BBUFF inh_vdd pfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX2 BNOT ANOT XORAB inh_vdd pfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX4 predrive CNOT XORAB inh_vdd pfet m=1 l=180.0n w=980.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX3 XNORAB CIN predrive inh_vdd pfet m=1 l=180.0n w=980.0n nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPB BNOT B inh_vdd inh_vdd pfet m=1 l=180.0n w=2.84u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 BBUFF BNOT inh_vdd inh_vdd pfet m=1 l=180.0n w=2.18u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPA ANOT A inh_vdd inh_vdd pfet m=1 l=180.0n w=2.52u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPC CNOT CIN inh_vdd inh_vdd pfet m=1 l=180.0n w=2.84u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP2 XNORAB XORAB inh_vdd inh_vdd pfet m=1 l=180.0n w=1.54u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    INVERT_F
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INVERT_F A Z inh_gnd inh_vdd
+*.PININFO A:I Z:O inh_gnd:B inh_vdd:B
+MTNAM2 Z A inh_gnd inh_gnd nfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNAM1 Z A inh_gnd inh_gnd nfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPAM1 Z A inh_vdd inh_vdd pfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPAM2 Z A inh_vdd inh_vdd pfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    MUX21_F
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT MUX21_F D0 D1 SD Z inh_gnd inh_vdd
+*.PININFO D0:I D1:I SD:I Z:O inh_gnd:B inh_vdd:B
+MTNS1 net72 SD net40 inh_gnd nfet m=1 l=180.0n w=1.27u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTND0 net43 D0 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.27u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZ Z net72 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTND1 net40 D1 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.27u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNS0 net72 S0 net43 inh_gnd nfet m=1 l=180.0n w=1.27u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNSD S0 SD inh_gnd inh_gnd nfet m=1 l=180.0n w=400.0n nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPS1 net72 SD net68 inh_vdd pfet m=1 l=180.0n w=1.93u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD1 net59 D1 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.02u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD0 net68 D0 inh_vdd inh_vdd pfet m=1 l=180.0n w=1.99u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPS0 net72 S0 net59 inh_vdd pfet m=1 l=180.0n w=1.93u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZ Z net72 inh_vdd inh_vdd pfet m=1 l=180.0n w=3.08u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPSD S0 SD inh_vdd inh_vdd pfet m=1 l=180.0n w=700.0n nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    OR2_F
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT OR2_F A B Z inh_gnd inh_vdd
+*.PININFO A:I B:I Z:O inh_gnd:B inh_vdd:B
+MTNZ Z net28 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNB net28 B inh_gnd inh_gnd nfet m=1 l=180.0n w=760.0n nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNA net28 A inh_gnd inh_gnd nfet m=1 l=180.0n w=760.0n nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZ Z net28 inh_vdd inh_vdd pfet m=1 l=180.0n w=3.02u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPA net28 A net34 inh_vdd pfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPB net34 B inh_vdd inh_vdd pfet m=1 l=180.0n w=1.68u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    MUX41_J
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT MUX41_J D0 D1 D2 D3 SD1 SD2 Z inh_gnd inh_vdd
+*.PININFO D0:I D1:I D2:I D3:I SD1:I SD2:I Z:O inh_gnd:B inh_vdd:B
+MTND3 net148 D3 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.66u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTND2 net151 D2 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.66u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTND1 net154 D1 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.66u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNSD2 SD2_bar SD2 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTND0 net157 D0 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.66u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX5 net93 SD1 net149 inh_gnd nfet m=1 l=180.0n w=2.12u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNSD1 net131 SD1 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX4 net93 net131 net160 inh_gnd nfet m=1 l=180.0n w=2.14u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZM2 Z net93 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.96u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZM4 Z net93 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.96u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZM3 Z net93 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.96u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZM1 Z net93 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.96u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX0 net160 SD2_bar net157 inh_gnd nfet m=1 l=180.0n w=1.84u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX1 net160 SD2 net154 inh_gnd nfet m=1 l=180.0n w=1.84u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX2 net149 SD2_bar net151 inh_gnd nfet m=1 l=180.0n w=1.84u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNX3 net149 SD2 net148 inh_gnd nfet m=1 l=180.0n w=1.84u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD0 net157 D0 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.2u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPSD2 SD2_bar SD2 inh_vdd inh_vdd pfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD1 net154 D1 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.2u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD3 net148 D3 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.2u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPD2 net151 D2 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.2u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX5 net93 net131 net149 inh_vdd pfet m=1 l=180.0n w=2.5u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX4 net93 SD1 net160 inh_vdd pfet m=1 l=180.0n w=2.5u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPSD1 net131 SD1 inh_vdd inh_vdd pfet m=1 l=180.0n w=1.82u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM4 Z net93 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.04u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM3 Z net93 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.04u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM2 Z net93 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.04u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZM1 Z net93 inh_vdd inh_vdd pfet m=1 l=180.0n w=2.04u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX1 net160 SD2_bar net154 inh_vdd pfet m=1 l=180.0n w=2.42u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX0 net160 SD2 net157 inh_vdd pfet m=1 l=180.0n w=2.42u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX2 net149 SD2 net151 inh_vdd pfet m=1 l=180.0n w=2.42u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPX3 net149 SD2_bar net148 inh_vdd pfet m=1 l=180.0n w=2.42u nf=1 par=1 rf=0 
++ gcon=1 mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: cmrf7sf_digital_layout
+* Cell Name:    AND2_F
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT AND2_F A B Z inh_gnd inh_vdd
+*.PININFO A:I B:I Z:O inh_gnd:B inh_vdd:B
+MTNA net29 A net34 inh_gnd nfet m=1 l=180.0n w=1.32u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNB net34 B inh_gnd inh_gnd nfet m=1 l=180.0n w=1.32u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTNZ Z net29 inh_gnd inh_gnd nfet m=1 l=180.0n w=1.62u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPB net29 B inh_vdd inh_vdd pfet m=1 l=180.0n w=1.9u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPA net29 A inh_vdd inh_vdd pfet m=1 l=180.0n w=1.9u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTPZ Z net29 inh_vdd inh_vdd pfet m=1 l=180.0n w=3.02u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    1bitALU6function
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 1bitALU6function A Ainvert B Binvert Cin Cout Less OP0 OP1 OUT
+*.PININFO A:B Ainvert:B B:B Binvert:B Cin:B Cout:B Less:B OP0:B OP1:B OUT:B
+XI48 net23 net22 Cin Cout net31 gnd! vdd! / ADDF_F
+XI0 A net33 gnd! vdd! / INVERT_F
+XI47 B net26 gnd! vdd! / INVERT_F
+XI1 A net33 Ainvert net23 gnd! vdd! / MUX21_F
+XI4 B net26 Binvert net22 gnd! vdd! / MUX21_F
+XI40 net23 net22 net30 gnd! vdd! / OR2_F
+XI2 net34 net30 net31 Less OP0 OP1 OUT gnd! vdd! / MUX41_J
+XI41 net23 net22 net34 gnd! vdd! / AND2_F
+.ENDS
+

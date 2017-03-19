@@ -1,0 +1,62 @@
+DFF 1000
+ERC-GRLOGIC_TOUCHING_SXCUT
+0 0 4 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+You may have issues with you bulk substrate
+========================================================
+mixed_voltage_err
+0 0 2 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+Low Voltage FET gate connected to a Higher Voltage source/drain diffusion
+FLOATING-NW
+0 0 8 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+Rings of NW used for isolation generally are required
+to be tied to power.  Did you intend to leave this NW
+ring unconnected to power?  If so, the origin of a text
+string labeled FLOAT_NW on layer (LVS drawing2) placed
+inside the NW/RX ring will suppress the ERC warning.
+=======================================================
+POWER-TO-SUB-SHORT
+0 0 6 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+You have a power net defined in the variable POWER_NAMES
+connected to a substrate contact!!!
+This will short the power supply to the substrate!!!
+=======================================================
+POWER-TO-PWELL-SHORT
+0 0 6 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+You have a power net defined in the variable POWER_NAMES
+connected to a triple-well!!!
+Is this REALLY what you want???
+========================================================
+FORWARD-BIASED-PTIE
+0 0 6 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+===============================================
+You have shorted a ground supply to a power
+supply through a forward biased P-diffusion!!!
+Is this REALLY what you want???
+===============================================
+FORWARD-BIASED-NTIE
+0 0 6 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+You have shorted a power supply to a ground
+supply through a forward biased N-diffusion!!!
+Is this REALLY what you want???
+=======================================================
+BAD_IND_WIRING
+0 0 7 Nov 28 11:22:33 2016                                                      
+Rule File Pathname: /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+=======================================================
+You have external wiring coming into an inductor
+outside of the device ports "in" and "out".  Move
+wiring to proper placement on top of inductor ports
+indicated by the metal on "pn" purpose.
+=======================================================

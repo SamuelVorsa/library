@@ -1,0 +1,9 @@
+CADENCE IHNL01077
+
+cmrf7sf_digital_layout ADDF_F schematic cds0
+cmrf7sf_digital_layout INVERT_F schematic cds1
+cmrf7sf_digital_layout MUX21_F schematic cds2
+cmrf7sf_digital_layout OR2_F schematic cds3
+cmrf7sf_digital_layout MUX41_J schematic cds4
+cmrf7sf_digital_layout AND2_F schematic cds5
+ECEC471_Lib 1bitALU6function schematic cds6

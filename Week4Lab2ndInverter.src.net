@@ -1,0 +1,35 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: Week4Lab2ndInverter
+* View Name:     schematic
+* Netlisted on:  Oct 23 11:59:25 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Week4Lab2ndInverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Week4Lab2ndInverter in out
+*.PININFO in:I out:O
+MTN0 out in gnd! gnd! nfet m=1 l=180n w=2.2u nf=4 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out in vdd! vdd! pfet m=1 l=180n w=6.64u nf=4 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+

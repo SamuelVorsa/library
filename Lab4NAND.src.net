@@ -1,0 +1,39 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: Lab4NAND
+* View Name:     schematic
+* Netlisted on:  Nov  3 12:46:41 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NAND a b out
+*.PININFO a:I b:I out:I
+MTN1 out a net13 gnd! nfet m=1 l=180n w=1.45u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 net13 b gnd! gnd! nfet m=1 l=180n w=1.45u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out a vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+

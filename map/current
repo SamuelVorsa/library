@@ -1,0 +1,37 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "1bitALU6function"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/home/DREXEL/snv27/IBM_CMOS7RF"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "cmrf7sf_digital_layout/AND2_F/schematic" "AND2_F" )
+( "cmrf7sf_digital_layout/MUX21_F/schematic" "MUX21_F" )
+( "cmrf7sf_digital_layout/INVERT_F/schematic" "INVERT_F" )
+( "cmrf7sf_digital_layout/ADDF_F/schematic" "ADDF_F" )
+( "cmrf7sf_digital_layout/OR2_F/schematic" "OR2_F" )
+( "ECEC471_Lib/1bitALU6function/schematic" "1bitALU6function" )
+( "cmrf7sf_digital_layout/MUX41_J/schematic" "MUX41_J" )
+ )
+( term
+ )
+( param
+ )
+( "1bitALU6function" "ihnl/cds6/map" )
+( "MUX41_J" "ihnl/cds4/map" )
+( "ADDF_F" "ihnl/cds0/map" )
+( "MUX21_F" "ihnl/cds2/map" )
+( "INVERT_F" "ihnl/cds1/map" )
+( "OR2_F" "ihnl/cds3/map" )
+( "AND2_F" "ihnl/cds5/map" )
+ )

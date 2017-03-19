@@ -1,0 +1,394 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Sun Oct 23 12:01:03 2016
+Calibre Version:              v2015.3_25.16    Tue Sep 1 14:37:32 PDT 2015
+Rule File Pathname:           /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               Week4Lab3rdInverter.calibre.db
+Layout Primary Cell:          Week4Lab3rdInverter
+Current Directory:            /home/DREXEL/snv27/IBM_CMOS7RF
+User Name:                    snv27
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         Week4Lab3rdInverter.erc.results (ASCII)
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          Week4Lab3rdInverter.erc.summary (REPLACE)
+Geometry Flagging:            ACUTE = YES  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = YES  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+EXPAND CELL efuse not located or not allowed.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name ?float?.
+There is no data for layout net name ?float?.
+There is no data for layout net name VSS.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name VSS:G.
+There is no data for layout net name DVSS.
+There is no data for layout net name DVSS:P.
+There is no data for layout net name VSS!.
+There is no data for layout net name ?PWRN?.
+There is no data for layout net name vss?.
+There is no data for layout net name GND.
+There is no data for layout net name GND:G.
+There is no data for layout net name sub!.
+There is no data for layout net name sub?.
+There is no data for layout net name sub_vss_33!.
+There is no data for layout net name sub_vssd_33!.
+There is no data for layout net name sub_vssa_33!.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VSS.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name VSS:G.
+There is no data for layout net name DVSS.
+There is no data for layout net name DVSS:P.
+There is no data for layout net name VSS!.
+There is no data for layout net name ?PWRN?.
+There is no data for layout net name vss?.
+There is no data for layout net name GND.
+There is no data for layout net name GND:G.
+There is no data for layout net name sub!.
+There is no data for layout net name sub?.
+There is no data for layout net name sub_vss_33!.
+There is no data for layout net name sub_vssd_33!.
+There is no data for layout net name sub_vssa_33!.
+There is no data for layout net name VSS.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name VSS:G.
+There is no data for layout net name DVSS.
+There is no data for layout net name DVSS:P.
+There is no data for layout net name VSS!.
+There is no data for layout net name ?PWRN?.
+There is no data for layout net name vss?.
+There is no data for layout net name GND.
+There is no data for layout net name GND:G.
+There is no data for layout net name sub!.
+There is no data for layout net name sub?.
+There is no data for layout net name sub_vss_33!.
+There is no data for layout net name sub_vssd_33!.
+There is no data for layout net name sub_vssa_33!.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VDD.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VCC!.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name Vcc.
+There is no data for layout net name vddd.
+There is no data for layout net name ?PWRP?.
+There is no data for layout net name VSS.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name VSS:G.
+There is no data for layout net name DVSS.
+There is no data for layout net name DVSS:P.
+There is no data for layout net name VSS!.
+There is no data for layout net name ?PWRN?.
+There is no data for layout net name vss?.
+There is no data for layout net name GND.
+There is no data for layout net name GND:G.
+There is no data for layout net name sub!.
+There is no data for layout net name sub?.
+There is no data for layout net name sub_vss_33!.
+There is no data for layout net name sub_vssd_33!.
+There is no data for layout net name sub_vssa_33!.
+There is no data for layout net name VSS.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name VSS:G.
+There is no data for layout net name DVSS.
+There is no data for layout net name DVSS:P.
+There is no data for layout net name VSS!.
+There is no data for layout net name ?PWRN?.
+There is no data for layout net name vss?.
+There is no data for layout net name GND.
+There is no data for layout net name GND:G.
+There is no data for layout net name sub!.
+There is no data for layout net name sub?.
+There is no data for layout net name sub_vss_33!.
+There is no data for layout net name sub_vssd_33!.
+There is no data for layout net name sub_vssa_33!.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER PI ............... TOTAL Original Geometry Count = 0  (0)
+LAYER GRLOGIC_IN ....... TOTAL Original Geometry Count = 1  (1)
+LAYER SXCUT_IN ......... TOTAL Original Geometry Count = 0  (0)
+LAYER ESDUMMY .......... TOTAL Original Geometry Count = 0  (0)
+LAYER ESD_CDM .......... TOTAL Original Geometry Count = 0  (0)
+LAYER DIPI ............. TOTAL Original Geometry Count = 0  (0)
+LAYER OP ............... TOTAL Original Geometry Count = 0  (0)
+LAYER PC ............... TOTAL Original Geometry Count = 13 (13)
+LAYER BPERI ............ TOTAL Original Geometry Count = 0  (0)
+LAYER SBD_OUT .......... TOTAL Original Geometry Count = 0  (0)
+LAYER NW ............... TOTAL Original Geometry Count = 2  (2)
+LAYER DI ............... TOTAL Original Geometry Count = 0  (0)
+LAYER ca_all ........... TOTAL Original Geometry Count = 41 (41)
+LAYER RX ............... TOTAL Original Geometry Count = 18 (18)
+LAYER JC ............... TOTAL Original Geometry Count = 0  (0)
+LAYER MOSVAR ........... TOTAL Original Geometry Count = 0  (0)
+LAYER BP ............... TOTAL Original Geometry Count = 2  (2)
+LAYER EDGELAYER ........ TOTAL Original Geometry Count = 0  (0)
+LAYER JD ............... TOTAL Original Geometry Count = 0  (0)
+LAYER RN ............... TOTAL Original Geometry Count = 0  (0)
+LAYER DIFFMOSVAR ....... TOTAL Original Geometry Count = 0  (0)
+LAYER ESDUMMY_DEV ...... TOTAL Original Geometry Count = 0  (0)
+LAYER OUTLINE_RF ....... TOTAL Original Geometry Count = 0  (0)
+LAYER TG ............... TOTAL Original Geometry Count = 0  (0)
+LAYER OUTLINE_DECAP .... TOTAL Original Geometry Count = 0  (0)
+LAYER BNDEV ............ TOTAL Original Geometry Count = 0  (0)
+LAYER SBLK ............. TOTAL Original Geometry Count = 0  (0)
+LAYER NS ............... TOTAL Original Geometry Count = 0  (0)
+LAYER M1 ............... TOTAL Original Geometry Count = 38 (38)
+LAYER SCHKY ............ TOTAL Original Geometry Count = 0  (0)
+LAYER BB ............... TOTAL Original Geometry Count = 0  (0)
+LAYER SCGATE ........... TOTAL Original Geometry Count = 0  (0)
+LAYER AN ............... TOTAL Original Geometry Count = 0  (0)
+LAYER DG ............... TOTAL Original Geometry Count = 0  (0)
+LAYER DGV .............. TOTAL Original Geometry Count = 0  (0)
+LAYER NW_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER PCFUSE ........... TOTAL Original Geometry Count = 0  (0)
+LAYER LV ............... TOTAL Original Geometry Count = 0  (0)
+LAYER DV ............... TOTAL Original Geometry Count = 0  (0)
+LAYER BONDPAD .......... TOTAL Original Geometry Count = 0  (0)
+LAYER AM ............... TOTAL Original Geometry Count = 0  (0)
+LAYER RES_HV ........... TOTAL Original Geometry Count = 0  (0)
+LAYER RR ............... TOTAL Original Geometry Count = 0  (0)
+LAYER RP ............... TOTAL Original Geometry Count = 0  (0)
+LAYER PC_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M1EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER TRANSMIS ......... TOTAL Original Geometry Count = 0  (0)
+LAYER IND_FILT ......... TOTAL Original Geometry Count = 0  (0)
+LAYER M1_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M1_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M2EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER M2 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER FT_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M5 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER AM_IND ........... TOTAL Original Geometry Count = 0  (0)
+LAYER AMPIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER M2_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER V1_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M2_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M3EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER M3 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER M3_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M3_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M4EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER M4 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER M4_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M4_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M5EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER M5_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER M5_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MTEXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER MT ............... TOTAL Original Geometry Count = 0  (0)
+LAYER NOHR ............. TOTAL Original Geometry Count = 0  (0)
+LAYER MIM_HD ........... TOTAL Original Geometry Count = 0  (0)
+LAYER QT ............... TOTAL Original Geometry Count = 0  (0)
+LAYER HT ............... TOTAL Original Geometry Count = 0  (0)
+LAYER MIM_HK ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MT_CAP ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MT_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER AMEXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER MZ ............... TOTAL Original Geometry Count = 0  (0)
+LAYER ML ............... TOTAL Original Geometry Count = 0  (0)
+LAYER MZ_IND ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MA_IND ........... TOTAL Original Geometry Count = 0  (0)
+LAYER ML_IND ........... TOTAL Original Geometry Count = 0  (0)
+LAYER AM_RES ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MLEXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER MLPIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER MZPIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER E1EXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER E1 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER E1PIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER MAEXCLUD_TRANS ... TOTAL Original Geometry Count = 0  (0)
+LAYER MA ............... TOTAL Original Geometry Count = 0  (0)
+LAYER MAPIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER K1 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER V2_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER V3_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER V4_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER V5_ALL ........... TOTAL Original Geometry Count = 0  (0)
+LAYER NOSUBC ........... TOTAL Original Geometry Count = 0  (0)
+LAYER BBIND ............ TOTAL Original Geometry Count = 0  (0)
+LAYER LVSDG1 ........... TOTAL Original Geometry Count = 0  (0)
+LAYER MULTI ............ TOTAL Original Geometry Count = 0  (0)
+LAYER DUALPOLY ......... TOTAL Original Geometry Count = 0  (0)
+LAYER emitter .......... TOTAL Original Geometry Count = 0  (0)
+LAYER ZEROVT ........... TOTAL Original Geometry Count = 0  (0)
+LAYER NR ............... TOTAL Original Geometry Count = 0  (0)
+LAYER ZVT2 ............. TOTAL Original Geometry Count = 0  (0)
+LAYER HG ............... TOTAL Original Geometry Count = 0  (0)
+LAYER PR ............... TOTAL Original Geometry Count = 0  (0)
+LAYER DIODE ............ TOTAL Original Geometry Count = 0  (0)
+LAYER TEXT_DEV ......... TOTAL Original Geometry Count = 0  (0)
+LAYER LVSDWG4 .......... TOTAL Original Geometry Count = 0  (0)
+LAYER LVSDG3 ........... TOTAL Original Geometry Count = 0  (0)
+LAYER ALPHA_COUNT ...... TOTAL Original Geometry Count = 0  (0)
+LAYER OUTLINE .......... TOTAL Original Geometry Count = 0  (0)
+LAYER M2PIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER M3PIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER M4PIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER M5PIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER MTPIN ............ TOTAL Original Geometry Count = 0  (0)
+LAYER M1PIN ............ TOTAL Original Geometry Count = 4  (4)
+LAYER HR_GND ........... TOTAL Original Geometry Count = 0  (0)
+LAYER E2 ............... TOTAL Original Geometry Count = 0  (0)
+LAYER ALPHA_IMAGE1 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER RX_NET_LAYER ..... TOTAL Original Geometry Count = 0  (0)
+LAYER OUTLINE_CAP ...... TOTAL Original Geometry Count = 0  (0)
+LAYER LVS1DG6 .......... TOTAL Original Geometry Count = 0  (0)
+LAYER LVSDG6 ........... TOTAL Original Geometry Count = 0  (0)
+LAYER CORRPNT .......... TOTAL Original Geometry Count = 0  (0)
+LAYER E1_COIL .......... TOTAL Original Geometry Count = 0  (0)
+LAYER OUTLINE_PSP ...... TOTAL Original Geometry Count = 0  (0)
+LAYER ALPHA_IMAGE2 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER VNCAP_COUNT ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VNCAP_PARM ....... TOTAL Original Geometry Count = 0  (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK ERC-GRLOGIC_TOUCHING_SXCUT ... TOTAL Result Count = 0 (0)
+RULECHECK mixed_voltage_err ............ TOTAL Result Count = 0 (0)
+RULECHECK FLOATING-NW .................. TOTAL Result Count = 0 (0)
+RULECHECK POWER-TO-SUB-SHORT ........... TOTAL Result Count = 0 (0)
+RULECHECK POWER-TO-PWELL-SHORT ......... TOTAL Result Count = 0 (0)
+RULECHECK FORWARD-BIASED-PTIE .......... TOTAL Result Count = 0 (0)
+RULECHECK FORWARD-BIASED-NTIE .......... TOTAL Result Count = 0 (0)
+RULECHECK BAD_IND_WIRING ............... TOTAL Result Count = 0 (0)
+----------------------------------------------------------------------------------
+--- ERC RULECHECK RESULTS STATISTICS (BY CELL)
+---
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              0
+TOTAL REAL Time:                             1
+TOTAL Original Layer Geometries:             119 (119)
+TOTAL ERC RuleChecks Executed:               8
+TOTAL ERC RuleCheck Results Generated:       0 (0)

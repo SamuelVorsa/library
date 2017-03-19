@@ -1,0 +1,90 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: FinalExam
+* View Name:     schematic
+* Netlisted on:  Nov 29 11:34:33 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Week4Lab1stInverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Week4Lab1stInverter in out
+*.PININFO in:I out:O
+MTN0 out in gnd! gnd! nfet m=1 l=180n w=600n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out in vdd! vdd! pfet m=1 l=180n w=1.8u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NOR
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NOR a b out
+*.PININFO a:I b:I out:O
+MTN1 out a gnd! gnd! nfet m=1 l=180n w=400n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 out b gnd! gnd! nfet m=1 l=180n w=400n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b net10 vdd! pfet m=1 l=180n w=1.99u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 net10 a vdd! vdd! pfet m=1 l=180n w=1.99u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Lab4NAND
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Lab4NAND a b out
+*.PININFO a:B b:B out:B
+MTN1 out a net13 gnd! nfet m=1 l=180n w=1.44u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTN0 net13 b gnd! gnd! nfet m=1 l=180n w=1.44u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 out b vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out a vdd! vdd! pfet m=1 l=180n w=2.4u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    FinalExam
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT FinalExam A B C Y
+*.PININFO A:B B:B C:B Y:B
+XI41 net014 net07 / Week4Lab1stInverter
+XI42 net013 net011 / Week4Lab1stInverter
+XI10 B net8 / Week4Lab1stInverter
+XI15 C net06 / Week4Lab1stInverter
+XI43 net012 net010 / Week4Lab1stInverter
+XI38 net8 C net014 / Lab4NOR
+XI37 net010 net011 Y / Lab4NOR
+XI40 net06 net8 net013 / Lab4NAND
+XI39 A net07 net012 / Lab4NAND
+.ENDS
+

@@ -1,0 +1,40 @@
+Week4Layout 1000
+SOFTCHK nw_nodev CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK pi_iso CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK pwell CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK ns_nodev CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK psub_nodev CONTACT.
+1 1 2 Oct 14 10:15:07 2016                                                      
+Net gnd! is selected for stamping.
+Rejected nets: 6
+p 1 4
+CN Week4Layout c 1 0 0 1 0 0
+DN 6
+6520 -4080
+7180 -4080
+7180 -3420
+6520 -3420
+SOFTCHK nw_dipdnw CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK pi_pcap CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK pwell_pcap CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK ns_hvr CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK ns_sbd CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK nw_diffmos CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK nw_mosvar CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK nw_esdvpnpnw CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK nw_esdpnpi CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      
+SOFTCHK pwell_esdndpi CONTACT.
+0 0 0 Oct 14 10:15:07 2016                                                      

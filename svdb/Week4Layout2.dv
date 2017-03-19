@@ -1,0 +1,35 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Week4Layout2.dv
+dv_start unmatched                                
+dv_cell {Week4Layout2} {Week4Layout2} unmatched
+dv_obj_count -transformed_nets {6 4} -transformed_inst {2 1} -transformed_port {4 4}
+dv_discrep 1 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {3} {                                                     ** missing net **}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {2} {                                                     ** missing net **}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {M3} {} -lloc {(10.920,10.950)} {  MP(pfet)}
+dv_discrep_line {  } -ldev {M1} {} -lloc {(10.920,7.220)} {  MN(nfet)}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Instances}
+dv_discrep_line {(_invv)                                                   ** missing injected instance **}
+dv_discrep_line {}
+dv_discrep_line {Devices: }
+dv_discrep_line {  } -ldev {M2} {} -lloc {(4.900,15.750)} {  MP(pfet)}
+dv_discrep_line {  } -ldev {M0} {} -lloc {(4.900,13.220)} {  MN(nfet)}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Instances}
+dv_discrep_line {** missing injected instance **                           (_invx2v)}
+dv_discrep_line {}
+dv_discrep_line {                                                          Devices: }
+dv_discrep_line {                                                            } -sdev {MTP1} {  MP(pfet)}
+dv_discrep_line {                                                            } -sdev {MTN1} {  MN(nfet)}
+dv_discrep_line {                                                            } -sdev {MTP0} {  MP(pfet)}
+dv_discrep_line {                                                            } -sdev {MTN0} {  MN(nfet)}
+dv_discrep_line {}
+dv_end

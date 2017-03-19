@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      snv27
+HostName                       xunil-03.coe.drexel.edu
+ProcessIdentifier              27593
+ProcessCreationTime_UTC        1489944514
+ProcessCreationTime_Readable   Sun Mar 19 13:28:34 2017 EDT
+AppIdentifier                  /opt/cadence/IC616/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/DREXEL/snv27/IBM_CMOS7RF/libManager.log
+TimeEditLocked                 Sun Mar 19 13:28:38 2017 EDT

@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1480350151 1480350153
+lvs_ExtOutFile RUNDIR /home/DREXEL/snv27/IBM_CMOS7RF
+lvs_ExtOutFile RULES_FILE /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {8 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/DREXEL/snv27/IBM_CMOS7RF/DFF.sp
+lvs_ExtOutFile EXTRACTION_REPORT DFF.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE DFF.erc.results
+lvs_ExtOutFile ERC_SUMMARY DFF.erc.summary

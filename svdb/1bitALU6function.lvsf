@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/DREXEL/snv27/IBM_CMOS7RF
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 0 3 0}
+lvs_LvsOutFile LVS_REPORT 1bitALU6function.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/DREXEL/snv27/IBM_CMOS7RF/1bitALU6function.src.net
+lvs_LvsOutFile RULES_FILE /home/DREXEL/snv27/IBM_CMOS7RF/_cmrf7sf.lvs.cal_
+lvs_LvsRunTimes 1489940343 1489940343

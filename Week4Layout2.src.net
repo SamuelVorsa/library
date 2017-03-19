@@ -1,0 +1,39 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  ECEC471_Lib
+* Top Cell Name: Week4Layout2
+* View Name:     schematic
+* Netlisted on:  Oct 14 10:47:22 2016
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM p5vonly=0
++ phires=0
+
+*.GLOBAL vdd!
++        gnd!
+
+*.PIN vdd!
+*+    gnd!
+
+************************************************************************
+* Library Name: ECEC471_Lib
+* Cell Name:    Week4Layout2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Week4Layout2 in out
+*.PININFO in:I out:O
+MTN0 out net7 gnd! gnd! nfet m=1 l=180n w=2.21u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTN1 net7 in gnd! gnd! nfet m=1 l=180n w=600n nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+MTP0 out net7 vdd! vdd! pfet m=1 l=180n w=6.63u nf=1 par=1 rf=0 gcon=1 
++ mSwitch=0 bentgate=0 psp=0 idg=0 gns=0
+MTP1 net7 in vdd! vdd! pfet m=1 l=180n w=1.8u nf=1 par=1 rf=0 gcon=1 mSwitch=0 
++ bentgate=0 psp=0 idg=0 gns=0
+.ENDS
+

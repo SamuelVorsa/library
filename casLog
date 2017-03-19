@@ -1,0 +1,36 @@
+
+*** Check Against Source on ('ECEC471_Lib' '1bitALU6function' 'layout') - Sun Mar 19 12:45:38 2017 ***
+
+INFO (LX-1013): Instance terminal 'A' is missing from layout instance '|I0'.
+INFO (LX-1013): Instance terminal 'A' is missing from layout instance '|I40'.
+INFO (LX-1013): Instance terminal 'A' is missing from layout instance '|I41'.
+INFO (LX-1013): Instance terminal 'A' is missing from layout instance '|I47'.
+INFO (LX-1013): Instance terminal 'A' is missing from layout instance '|I48'.
+INFO (LX-1013): Instance terminal 'B' is missing from layout instance '|I40'.
+INFO (LX-1013): Instance terminal 'B' is missing from layout instance '|I41'.
+INFO (LX-1013): Instance terminal 'B' is missing from layout instance '|I48'.
+INFO (LX-1013): Instance terminal 'CIN' is missing from layout instance '|I48'.
+INFO (LX-1013): Instance terminal 'COUT' is missing from layout instance '|I48'.
+INFO (LX-1013): Instance terminal 'D0' is missing from layout instance '|I1'.
+INFO (LX-1013): Instance terminal 'D0' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'D0' is missing from layout instance '|I4'.
+INFO (LX-1013): Instance terminal 'D1' is missing from layout instance '|I1'.
+INFO (LX-1013): Instance terminal 'D1' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'D1' is missing from layout instance '|I4'.
+INFO (LX-1013): Instance terminal 'D2' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'D3' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'SD' is missing from layout instance '|I1'.
+INFO (LX-1013): Instance terminal 'SD' is missing from layout instance '|I4'.
+INFO (LX-1013): Instance terminal 'SD1' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'SD2' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'SUM' is missing from layout instance '|I48'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I0'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I1'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I2'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I4'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I40'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I41'.
+INFO (LX-1013): Instance terminal 'Z' is missing from layout instance '|I47'.
+
+*** Check Against Source complete. ***
+

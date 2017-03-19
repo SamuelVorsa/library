@@ -1,0 +1,27 @@
+//
+//  Rule file generated on Sun Mar 19 11:30:00 EDT 2017
+//     by Calibre Interactive - DRC (v2015.3_25.16)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "1bitALU6function.calibre.db"
+LAYOUT PRIMARY "1bitALU6function"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "1bitALU6function.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "1bitALU6function.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+INCLUDE "/mnt/class_data/ecec571-f2015/IBM_CMOS7RF_p18u/IBM_PDK/cmrf7sf/V2.0.1.0AM/Calibre/DRC/cmrf7sf.drc.cal"
+
